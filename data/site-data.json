@@ -1,0 +1,241 @@
+{
+  "hero": {
+    "title": "BALKANLARIN ZİRVELERİ",
+    "subtitle": "Arnavutluk, Kosova ve Karadağ'da Sınırlar Ötesi Trekking Deneyimi",
+    "description": "Dünyanın sayılı sınır ötesi yürüyüş rotalarından biri olan 192 kilometrelik Balkanların Zirveleri, Batı Balkanların uzak ve el değmemiş dağlık bölgelerinden geçerek benzersiz bir macera sunuyor.",
+    "ctaText": "Rotayı Keşfet",
+    "ctaLink": "/rota-aciklamasi"
+  },
+  "introduction": {
+    "title": "Balkanların Kalbinde Gizli Bir Hazine",
+    "paragraphs": [
+      "Yerel halkın ekonomisine katkı sağlamak, Kosova, Karadağ ve Arnavutluk'un dağlık bölgelerindeki göçü durdurmak ve bölgenin bu kısımlarını birbirine yakınlaştırmak amacıyla, ulusal ve yerel turizm örgütleri ile dağcılık kulüpleri, Alman Kalkınma İşbirliği ile güçlerini birleştirerek \"Balkanların Zirveleri\" bölgesini dağ turizmi için tek bir destinasyon olarak geliştirdi.",
+      "Sınır ötesi \"Balkanların Zirveleri\", Batı Balkanların uzak ve vahşi dağlık bölgelerinden birinden geçer. Çoban patikaları ve yaya yollarını kullanarak, rota deniz seviyesinin 2300 metre üzerine kadar çıkan yüksek alpin dağlardan geçer ve yeşil vadilerden kristal berraklığında dağ göllerine, şelalelerden nehirlere ve zamanın durmuş göründüğü uzak, pitoresk dağ köylerine kadar çeşitli nefes kesici manzaralarla dolu dağ manzaralarından geçer.",
+      "Yirmi yıl öncesine kadar bölge ziyaretçiler için neredeyse erişilemezdi, bu da Arnavutluk, Kosova ve Karadağ'ın üç dağından geçerek yürüyüş yapmayı otantik bir kültürel deneyim ve macera haline getiriyor."
+    ]
+  },
+  "route": {
+    "subtitle": "192 km'lik efsanevi yürüyüş rotası",
+    "description": "Oldukça iddialı \"Balkanların Zirveleri\" rotası 192 km'lik bir mesafeyi kapsar ve üç ülkeyi geçerek bir döngü tamamlar.",
+    "stats": {
+      "distance": "200 km",
+      "duration": "10-13 gün",
+      "countries": "3 ülke",
+      "maxAltitude": "2,300 m"
+    },
+    "stages": [
+      "Theth, Arnavutluk",
+      "Valbonë, Arnavutluk",
+      "Çerem, Arnavutluk",
+      "Dobërdol, Arnavutluk",
+      "Milishevc, Kosova",
+      "Reka e Allagës, Kosova",
+      "Liqinat i Kuçishtës, Kosova",
+      "Babino Polje, Karadağ",
+      "Plav, Karadağ",
+      "Vusanje, Karadağ",
+      "Shkodra, Arnavutluk"
+    ],
+    "technicalDetails": {
+      "minAltitude": "670 metre",
+      "maxAltitude": "2,290 metre",
+      "totalAscent": "9,800 metre",
+      "totalDescent": "9,900 metre"
+    }
+  },
+  "onTrail": {
+    "services": [
+      {
+        "icon": "Home",
+        "title": "Konaklama ve Misafirperverlik",
+        "description": "Bölge, sakinlerinin misafirperverliği ile tanınır. Ziyaretçiler, her üç ülkede de rota boyunca bulunan geleneksel evlerde konaklayabilirler."
+      },
+      {
+        "icon": "Utensils",
+        "title": "Yiyecek ve İçecek",
+        "description": "Rota kısmen ıssız dağlık bölgelerden geçtiği için yanınızda her zaman yeterli miktarda su ve yiyecek bulundurmanız tavsiye edilir."
+      },
+      {
+        "icon": "Map",
+        "title": "İşaretleme ve Yönlendirme",
+        "description": "Balkanların Zirveleri rotasının tamamı, rota boyunca özel işaretleme sistemleri ile işaretlenmiştir."
+      }
+    ],
+    "markings": [
+      {
+        "country": "Arnavutluk",
+        "colors": "Beyaz/Kırmızı/Beyaz"
+      },
+      {
+        "country": "Kosova",
+        "colors": "Kırmızı/Beyaz/Kırmızı"
+      },
+      {
+        "country": "Karadağ",
+        "colors": "Kırmızı daire/Beyaz dolgu"
+      }
+    ],
+    "warnings": [
+      "Mümkün olduğunda, kalacak yer garantilemek için önceden rezervasyon yapmanız önemle tavsiye edilir.",
+      "Rotanın tamamı işaretlenmiş olsa da, kısmen ıssız dağ bölgelerinden geçer.",
+      "Rota boyunca çok az çöp toplama tesisi bulunduğunu unutmayın.",
+      "Acil durumlarda yerel kurtarma ekiplerinin numaralarını kaydedin."
+    ]
+  },
+  "travelAdvice": {
+    "categories": [
+      {
+        "icon": "Cloud",
+        "title": "Hava Koşulları ve Gün Işığı",
+        "content": "Yürüyüş gezinizi ne zaman gerçekleştirirseniz gerçekleştirin, her gün beklenen hava koşullarının farkında olmak çok önemlidir.",
+        "tips": [
+          "Günlük yürüyüş rotanızı yeterli gün ışığı ile planlayın",
+          "Hava durumunu düzenli olarak kontrol edin",
+          "Kış aylarında ekstra dikkatli olun"
+        ]
+      },
+      {
+        "icon": "Shirt",
+        "title": "Giyim ve Ekipman",
+        "content": "Sıcak ve kuru bir yürüyüşçü mutlu bir yürüyüşçüdür! Bu nedenle rahat yürüyüş botları ve çoraplar şart.",
+        "tips": [
+          "Katmanlı giyinin",
+          "Su geçirmez ekipman şart",
+          "Yedek çorap ve eldiven bulundurun",
+          "GPS, pusula, ilk yardım kiti taşıyın"
+        ]
+      },
+      {
+        "icon": "Plane",
+        "title": "Ulaşım",
+        "content": "Her üç ülkeye de uçakla kolayca ulaşılabilir.",
+        "tips": [
+          "Havaalanından transferi önceden ayarlayın",
+          "Minibüs ve otobüs seçeneklerini araştırın",
+          "Yerel turizm ofislerinden bilgi alın"
+        ]
+      }
+    ],
+    "essentialItems": [
+      "Yürüyüş botları ve yedek çoraplar",
+      "Su geçirmez ceket ve pantolon",
+      "Polar veya yün kazak",
+      "Şapka, eldiven ve güneş gözlüğü",
+      "GPS cihazı veya akıllı telefon",
+      "İlk yardım kiti",
+      "Kafa lambası veya el feneri",
+      "Yeterli su ve atıştırmalık",
+      "Güneş kremi ve dudak koruyucu",
+      "Harita ve pusula"
+    ]
+  },
+  "resources": {
+    "downloads": [
+      {
+        "title": "Balkanların Zirveleri Resmi Rehberi",
+        "description": "Rotanın tüm etaplarını içeren detaylı PDF rehber",
+        "type": "PDF",
+        "size": "15 MB",
+        "url": "#"
+      },
+      {
+        "title": "GPS Rota Dosyaları",
+        "description": "GPX formatında tüm rota verileri",
+        "type": "GPX",
+        "size": "2 MB",
+        "url": "#"
+      },
+      {
+        "title": "Konaklama Rehberi",
+        "description": "Tüm konaklama noktalarının detaylı listesi",
+        "type": "PDF",
+        "size": "5 MB",
+        "url": "#"
+      }
+    ],
+    "contacts": [
+      {
+        "country": "Arnavutluk",
+        "organizations": [
+          {
+            "name": "Albanian Tourism Organization",
+            "phone": "+355 4 2234 567",
+            "email": "info@albania-tourism.al"
+          },
+          {
+            "name": "Theth National Park",
+            "phone": "+355 68 2234 567",
+            "email": "theth@parks.al"
+          }
+        ]
+      },
+      {
+        "country": "Kosova",
+        "organizations": [
+          {
+            "name": "Kosovo Tourism Board",
+            "phone": "+383 38 200 200",
+            "email": "info@kosovotourism.xk"
+          },
+          {
+            "name": "Peja Tourist Information",
+            "phone": "+383 39 432 100",
+            "email": "visit@peja.xk"
+          }
+        ]
+      },
+      {
+        "country": "Karadağ",
+        "organizations": [
+          {
+            "name": "Montenegro Tourism Organization",
+            "phone": "+382 20 665 200",
+            "email": "info@montenegro.travel"
+          },
+          {
+            "name": "Plav Tourist Center",
+            "phone": "+382 51 251 100",
+            "email": "tourism@plav.me"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "category": "Haritalar ve Navigasyon",
+        "links": [
+          {
+            "name": "OpenStreetMap - Balkanlar",
+            "url": "#"
+          },
+          {
+            "name": "Rota GPX İndirmeleri",
+            "url": "#"
+          },
+          {
+            "name": "Çevrimdışı Harita Uygulamaları",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "category": "Hava Durumu",
+        "links": [
+          {
+            "name": "Mountain Weather Balkans",
+            "url": "#"
+          },
+          {
+            "name": "7 Günlük Tahmin",
+            "url": "#"
+          },
+          {
+            "name": "Canlı Web Kameraları",
+            "url": "#"
+          }
+        ]
+      }
+    ]
+  },
+  "gallery": []
+}

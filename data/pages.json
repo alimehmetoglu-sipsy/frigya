@@ -1,0 +1,418 @@
+{
+  "pages": [
+    {
+      "id": "1757162846619",
+      "title": "Hakkımızda",
+      "slug": "hakkimizda",
+      "template": "content",
+      "components": [
+        {
+          "id": "1757162938844",
+          "type": "hero",
+          "content": {
+            "title": "Hero Başlık",
+            "subtitle": "Alt başlık metni",
+            "image": "https://via.placeholder.com/1920x600",
+            "button": {
+              "text": "Başla",
+              "link": "#"
+            }
+          },
+          "settings": {
+            "padding": {
+              "top": 20,
+              "bottom": 20,
+              "left": 0,
+              "right": 0
+            },
+            "margin": {
+              "top": 0,
+              "bottom": 20,
+              "left": 0,
+              "right": 0
+            },
+            "background": "transparent",
+            "animation": "none"
+          }
+        },
+        {
+          "id": "1757162982484",
+          "type": "paragraph",
+          "content": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          "settings": {
+            "padding": {
+              "top": 20,
+              "bottom": 20,
+              "left": 0,
+              "right": 0
+            },
+            "margin": {
+              "top": 0,
+              "bottom": 20,
+              "left": 0,
+              "right": 0
+            },
+            "background": "transparent",
+            "animation": "none"
+          }
+        },
+        {
+          "id": "1757162997809",
+          "type": "features",
+          "content": {},
+          "settings": {
+            "padding": {
+              "top": 20,
+              "bottom": 20,
+              "left": 0,
+              "right": 0
+            },
+            "margin": {
+              "top": 0,
+              "bottom": 20,
+              "left": 0,
+              "right": 0
+            },
+            "background": "transparent",
+            "animation": "none"
+          }
+        }
+      ],
+      "published": false,
+      "seo": {
+        "title": "Hakkımızda",
+        "description": "",
+        "keywords": ""
+      },
+      "createdAt": "2025-09-06T12:47:26.619Z",
+      "updatedAt": "2025-09-06T12:51:47.569Z"
+    },
+    {
+      "id": "1757163245992",
+      "title": "ali",
+      "slug": "ali",
+      "template": "blank",
+      "components": [],
+      "published": false,
+      "seo": {
+        "title": "ali",
+        "description": "",
+        "keywords": ""
+      },
+      "createdAt": "2025-09-06T12:54:05.992Z",
+      "updatedAt": "2025-09-06T12:54:05.992Z"
+    },
+    {
+      "id": "rota-aciklamasi",
+      "title": "Rota Açıklaması",
+      "slug": "rota-aciklamasi",
+      "template": "content",
+      "components": [
+        {
+          "id": "rota-hero",
+          "type": "hero",
+          "content": {
+            "title": "Balkanların Zirveleri Rotası",
+            "subtitle": "Arnavutluk, Kosova ve Karadağ'ın en güzel doğal güzelliklerini keşfedin",
+            "image": "https://via.placeholder.com/1920x600",
+            "button": {
+              "text": "Rotayı Keşfet",
+              "link": "#"
+            }
+          },
+          "settings": {
+            "padding": { "top": 20, "bottom": 20, "left": 0, "right": 0 },
+            "margin": { "top": 0, "bottom": 20, "left": 0, "right": 0 },
+            "background": "transparent",
+            "animation": "none"
+          }
+        },
+        {
+          "id": "rota-description",
+          "type": "paragraph",
+          "content": {
+            "text": "Balkanların Zirveleri rotası, üç ülkeyi (Arnavutluk, Kosova ve Karadağ) birbirine bağlayan 192 km'lik muhteşem bir trekking rotasıdır. Bu rota, Balkan yarımadasının en güzel dağ manzaralarını, kristal berraklığındaki gölleri ve zengin kültürel mirasını keşfetme fırsatı sunar."
+          },
+          "settings": {
+            "padding": { "top": 20, "bottom": 20, "left": 0, "right": 0 },
+            "margin": { "top": 0, "bottom": 20, "left": 0, "right": 0 },
+            "background": "transparent",
+            "animation": "none"
+          }
+        }
+      ],
+      "published": true,
+      "seo": {
+        "title": "Rota Açıklaması - Balkanların Zirveleri",
+        "description": "Balkanların Zirveleri rotası hakkında detaylı bilgi alın.",
+        "keywords": "balkanlar, rota, trekking, dağcılık"
+      },
+      "createdAt": "2025-09-06T13:00:00.000Z",
+      "updatedAt": "2025-09-06T13:00:00.000Z",
+      "isSystem": true
+    },
+    {
+      "id": "rotada",
+      "title": "Rotada",
+      "slug": "rotada",
+      "template": "content",
+      "components": [
+        {
+          "id": "rotada-hero",
+          "type": "hero",
+          "content": {
+            "title": "Rotada Neler Var?",
+            "subtitle": "Yolculuğunuz boyunca karşılaşacağınız güzellikler",
+            "image": "https://via.placeholder.com/1920x600",
+            "button": {
+              "text": "Keşfet",
+              "link": "#"
+            }
+          },
+          "settings": {
+            "padding": { "top": 20, "bottom": 20, "left": 0, "right": 0 },
+            "margin": { "top": 0, "bottom": 20, "left": 0, "right": 0 },
+            "background": "transparent",
+            "animation": "none"
+          }
+        },
+        {
+          "id": "rotada-features",
+          "type": "features",
+          "content": {
+            "items": [
+              { "title": "Göller", "description": "Kristal berraklığındaki dağ gölleri" },
+              { "title": "Zirveler", "description": "Muhteşem manzaralı dağ zirveleri" },
+              { "title": "Köyler", "description": "Geleneksel Balkan köyleri" }
+            ]
+          },
+          "settings": {
+            "padding": { "top": 20, "bottom": 20, "left": 0, "right": 0 },
+            "margin": { "top": 0, "bottom": 20, "left": 0, "right": 0 },
+            "background": "transparent",
+            "animation": "none"
+          }
+        }
+      ],
+      "published": true,
+      "seo": {
+        "title": "Rotada - Balkanların Zirveleri",
+        "description": "Rotada neler var, neleri görebilirsiniz?",
+        "keywords": "rotada, göller, zirveler, köyler"
+      },
+      "createdAt": "2025-09-06T13:00:00.000Z",
+      "updatedAt": "2025-09-06T13:00:00.000Z",
+      "isSystem": true
+    },
+    {
+      "id": "seyahat-tavsiyeleri",
+      "title": "Seyahat Tavsiyeleri",
+      "slug": "seyahat-tavsiyeleri",
+      "template": "content",
+      "components": [
+        {
+          "id": "tavsiyeler-hero",
+          "type": "hero",
+          "content": {
+            "title": "Seyahat Tavsiyeleri",
+            "subtitle": "Güvenli ve keyifli bir yolculuk için önerilerimiz",
+            "image": "https://via.placeholder.com/1920x600",
+            "button": {
+              "text": "Tavsiyeleri İncele",
+              "link": "#"
+            }
+          },
+          "settings": {
+            "padding": { "top": 20, "bottom": 20, "left": 0, "right": 0 },
+            "margin": { "top": 0, "bottom": 20, "left": 0, "right": 0 },
+            "background": "transparent",
+            "animation": "none"
+          }
+        },
+        {
+          "id": "tavsiyeler-list",
+          "type": "list",
+          "content": {
+            "style": "bullet",
+            "items": [
+              "Uygun trekking ayakkabısı ve kıyafet seçin",
+              "Yeterli su ve yiyecek alın",
+              "Hava durumunu takip edin",
+              "Harita ve pusula yanınızda olsun",
+              "Acil durum iletişim bilgilerini kaydedin"
+            ]
+          },
+          "settings": {
+            "padding": { "top": 20, "bottom": 20, "left": 0, "right": 0 },
+            "margin": { "top": 0, "bottom": 20, "left": 0, "right": 0 },
+            "background": "transparent",
+            "animation": "none"
+          }
+        }
+      ],
+      "published": true,
+      "seo": {
+        "title": "Seyahat Tavsiyeleri - Balkanların Zirveleri",
+        "description": "Güvenli trekking için önemli tavsiyeler",
+        "keywords": "seyahat, tavsiye, güvenlik, trekking"
+      },
+      "createdAt": "2025-09-06T13:00:00.000Z",
+      "updatedAt": "2025-09-06T13:00:00.000Z",
+      "isSystem": true
+    },
+    {
+      "id": "kaynaklar",
+      "title": "Kaynaklar",
+      "slug": "kaynaklar",
+      "template": "content",
+      "components": [
+        {
+          "id": "kaynaklar-hero",
+          "type": "hero",
+          "content": {
+            "title": "Kaynaklar",
+            "subtitle": "Faydalı linkler ve dökümanlar",
+            "image": "https://via.placeholder.com/1920x600",
+            "button": {
+              "text": "Kaynaklara Göz At",
+              "link": "#"
+            }
+          },
+          "settings": {
+            "padding": { "top": 20, "bottom": 20, "left": 0, "right": 0 },
+            "margin": { "top": 0, "bottom": 20, "left": 0, "right": 0 },
+            "background": "transparent",
+            "animation": "none"
+          }
+        },
+        {
+          "id": "kaynaklar-links",
+          "type": "paragraph",
+          "content": {
+            "text": "Bu bölümde rotayla ilgili faydalı kaynakları, haritaları, rehberleri ve önemli linkleri bulabilirsiniz. Yolculuğunuzu planlamak için bu kaynaklardan faydalanabilirsiniz."
+          },
+          "settings": {
+            "padding": { "top": 20, "bottom": 20, "left": 0, "right": 0 },
+            "margin": { "top": 0, "bottom": 20, "left": 0, "right": 0 },
+            "background": "transparent",
+            "animation": "none"
+          }
+        }
+      ],
+      "published": true,
+      "seo": {
+        "title": "Kaynaklar - Balkanların Zirveleri",
+        "description": "Faydalı kaynaklar ve linkler",
+        "keywords": "kaynaklar, harita, rehber, döküman"
+      },
+      "createdAt": "2025-09-06T13:00:00.000Z",
+      "updatedAt": "2025-09-06T13:00:00.000Z",
+      "isSystem": true
+    },
+    {
+      "id": "galeri",
+      "title": "Galeri",
+      "slug": "galeri",
+      "template": "gallery",
+      "components": [
+        {
+          "id": "galeri-hero",
+          "type": "hero",
+          "content": {
+            "title": "Foto Galeri",
+            "subtitle": "Balkanların Zirveleri'nden muhteşem kareler",
+            "image": "https://via.placeholder.com/1920x600",
+            "button": {
+              "text": "Galeride Gezin",
+              "link": "#"
+            }
+          },
+          "settings": {
+            "padding": { "top": 20, "bottom": 20, "left": 0, "right": 0 },
+            "margin": { "top": 0, "bottom": 20, "left": 0, "right": 0 },
+            "background": "transparent",
+            "animation": "none"
+          }
+        },
+        {
+          "id": "galeri-photos",
+          "type": "gallery",
+          "content": {
+            "images": [
+              { "src": "https://via.placeholder.com/400x300", "alt": "Dağ Manzarası 1" },
+              { "src": "https://via.placeholder.com/400x300", "alt": "Dağ Manzarası 2" },
+              { "src": "https://via.placeholder.com/400x300", "alt": "Dağ Manzarası 3" },
+              { "src": "https://via.placeholder.com/400x300", "alt": "Dağ Manzarası 4" },
+              { "src": "https://via.placeholder.com/400x300", "alt": "Dağ Manzarası 5" },
+              { "src": "https://via.placeholder.com/400x300", "alt": "Dağ Manzarası 6" }
+            ]
+          },
+          "settings": {
+            "padding": { "top": 20, "bottom": 20, "left": 0, "right": 0 },
+            "margin": { "top": 0, "bottom": 20, "left": 0, "right": 0 },
+            "background": "transparent",
+            "animation": "none"
+          }
+        }
+      ],
+      "published": true,
+      "seo": {
+        "title": "Galeri - Balkanların Zirveleri",
+        "description": "Balkanların Zirveleri fotoğraf galerisi",
+        "keywords": "galeri, fotoğraf, manzara, dağ"
+      },
+      "createdAt": "2025-09-06T13:00:00.000Z",
+      "updatedAt": "2025-09-06T13:00:00.000Z",
+      "isSystem": true
+    },
+    {
+      "id": "iletisim",
+      "title": "İletişim",
+      "slug": "iletisim",
+      "template": "contact",
+      "components": [
+        {
+          "id": "iletisim-hero",
+          "type": "hero",
+          "content": {
+            "title": "İletişim",
+            "subtitle": "Sorularınız için bizimle iletişime geçin",
+            "image": "https://via.placeholder.com/1920x600",
+            "button": {
+              "text": "İletişime Geç",
+              "link": "#"
+            }
+          },
+          "settings": {
+            "padding": { "top": 20, "bottom": 20, "left": 0, "right": 0 },
+            "margin": { "top": 0, "bottom": 20, "left": 0, "right": 0 },
+            "background": "transparent",
+            "animation": "none"
+          }
+        },
+        {
+          "id": "iletisim-form",
+          "type": "contact",
+          "content": {},
+          "settings": {
+            "padding": { "top": 20, "bottom": 20, "left": 0, "right": 0 },
+            "margin": { "top": 0, "bottom": 20, "left": 0, "right": 0 },
+            "background": "transparent",
+            "animation": "none"
+          }
+        }
+      ],
+      "published": true,
+      "seo": {
+        "title": "İletişim - Balkanların Zirveleri",
+        "description": "Bizimle iletişime geçin",
+        "keywords": "iletişim, sorular, destek"
+      },
+      "createdAt": "2025-09-06T13:00:00.000Z",
+      "updatedAt": "2025-09-06T13:00:00.000Z",
+      "isSystem": true
+    }
+  ]
+}
