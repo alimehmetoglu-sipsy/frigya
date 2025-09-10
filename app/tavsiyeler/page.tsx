@@ -68,11 +68,6 @@ export default async function Tavsiyeler() {
     'Harita ve pusula'
   ];
 
-  const iconMap: { [key: string]: React.ComponentType } = {
-    'Cloud': Cloud,
-    'Shirt': Shirt,
-    'Plane': Plane
-  };
 
   return (
     <>
@@ -121,7 +116,6 @@ export default async function Tavsiyeler() {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {categories.map((category, index) => {
-                const Icon = iconMap[category.icon] || Cloud;
                 return (
                   <motion.div
                     key={index}
@@ -132,7 +126,10 @@ export default async function Tavsiyeler() {
                     className="bg-white rounded-lg shadow-lg p-6"
                   >
                     <div className="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center mb-4">
-                      <Icon className="w-7 h-7 text-primary-600" />
+                      {category.icon === 'Cloud' && <Cloud className="w-7 h-7 text-primary-600" />}
+                      {category.icon === 'Shirt' && <Shirt className="w-7 h-7 text-primary-600" />}
+                      {category.icon === 'Plane' && <Plane className="w-7 h-7 text-primary-600" />}
+                      {!['Cloud', 'Shirt', 'Plane'].includes(category.icon) && <Cloud className="w-7 h-7 text-primary-600" />}
                     </div>
                     <h3 className="text-xl font-bold mb-3">{category.title}</h3>
                     <p className="text-gray-600 mb-4">{category.content}</p>
