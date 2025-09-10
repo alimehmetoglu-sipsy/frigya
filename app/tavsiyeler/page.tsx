@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Cloud, Shirt, Plane, AlertCircle, CheckCircle2 } from 'lucide-react';
 import Navigation from '@/components/Navigation';
@@ -67,7 +68,7 @@ export default async function Tavsiyeler() {
     'Harita ve pusula'
   ];
 
-  const iconMap: { [key: string]: any } = {
+  const iconMap: { [key: string]: React.ComponentType } = {
     'Cloud': Cloud,
     'Shirt': Shirt,
     'Plane': Plane
