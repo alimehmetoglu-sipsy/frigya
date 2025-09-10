@@ -29,9 +29,10 @@ export default function Navigation() {
   }, []);
 
   // Alt sayfalar için navigation her zaman beyaz background kullanmalı
-  const isSubPage = pathname.includes('/rotada/') || 
+  const isSubPage = pathname.includes('/rotada') || 
     pathname.includes('/rota-aciklamasi') || 
     pathname.includes('/seyahat-tavsiyeleri') || 
+    pathname.includes('/tavsiyeler') ||
     pathname.includes('/album');
   
   const shouldUseLightBackground = isScrolled || isSubPage;
