@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { MapPin, Mountain, Clock, AlertTriangle, ChevronRight, Home, Utensils } from 'lucide-react';
 
+// Force cache invalidation for Vercel
 export default function RotadaPage() {
   const overnights = [
     '1. Theth, Arnavutluk',
