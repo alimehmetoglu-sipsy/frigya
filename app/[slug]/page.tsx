@@ -5,12 +5,23 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import DynamicPageContent from '@/components/DynamicPageContent';
 
+interface Page {
+  slug: string;
+  title: string;
+  published: boolean;
+  seo?: {
+    title?: string;
+    description?: string;
+    keywords?: string;
+  };
+}
+
 async function getPageData(slug: string) {
   try {
     const pagesFilePath = path.join(process.cwd(), 'data', 'pages.json');
     const data = await fs.readFile(pagesFilePath, 'utf-8');
     const pagesData = JSON.parse(data);
-    const page = pagesData.pages.find((p: any) => p.slug === slug && p.published);
+    const page = pagesData.pages.find((p: Page) => p.slug === slug && p.published);
     return page;
   } catch (error) {
     console.error('Error reading page:', error);
@@ -25,8 +36,8 @@ export async function generateStaticParams() {
     const pagesData = JSON.parse(data);
     
     return pagesData.pages
-      .filter((p: any) => p.published)
-      .map((p: any) => ({
+      .filter((p: Page) => p.published)
+      .map((p: Page) => ({
         slug: p.slug,
       }));
   } catch {

@@ -11,8 +11,8 @@ import Link from 'next/link';
 interface Component {
   id: string;
   type: string;
-  content: any;
-  settings: any;
+  content: Record<string, unknown>;
+  settings: Record<string, unknown>;
 }
 
 interface PageData {
