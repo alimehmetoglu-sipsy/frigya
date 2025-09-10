@@ -1,152 +1,353 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import { Home, Utensils, MapPin, AlertTriangle, ChevronRight } from 'lucide-react';
+import { MapPin, Mountain, Clock, AlertTriangle, ChevronRight, Home, Utensils } from 'lucide-react';
 
 export default function RotadaPage() {
-  const routeStages = [
-    { href: '/rotada/theth-valbone', title: 'Theth - Valbonë', subtitle: 'Etap 1', country: 'Arnavutluk' },
-    { href: '/rotada/valbone-cerem', title: 'Valbonë - Çerem', subtitle: 'Etap 2', country: 'Arnavutluk' },
-    { href: '/rotada/cerem-doberdol', title: 'Çerem - Dobërdol', subtitle: 'Etap 3', country: 'Arnavutluk' },
-    { href: '/rotada/doberdol-milishevc', title: 'Dobërdol - Milishevc', subtitle: 'Etap 4', country: 'Arnavutluk - Kosova' },
-    { href: '/rotada/milishevc-reka-allages', title: 'Milishevc - Reka e Allagës', subtitle: 'Etap 5', country: 'Kosova' },
-    { href: '/rotada/reka-allages-kucishte', title: 'Reka e Allagës - Kuçishtë', subtitle: 'Etap 6', country: 'Kosova' },
-    { href: '/rotada/kucishte-babino-polje', title: 'Kuçishtë - Babino Polje', subtitle: 'Etap 7', country: 'Kosova - Karadağ' },
-    { href: '/rotada/babino-polje-plav', title: 'Babino Polje - Plav (Hrid Gölü)', subtitle: 'Etap 8', country: 'Karadağ' },
-    { href: '/rotada/plav-vusanje', title: 'Plav - Vusanje (Gri Ada)', subtitle: 'Etap 9', country: 'Karadağ' },
-    { href: '/rotada/vusanje-theth', title: 'Vusanje - Theth', subtitle: 'Etap 10', country: 'Karadağ - Arnavutluk' },
+  const overnights = [
+    '1. Theth, Arnavutluk',
+    '2. Valbonë, Arnavutluk', 
+    '3. Çerem, Arnavutluk',
+    '4. Dobërdol, Arnavutluk',
+    '5. Milishevc, Kosova',
+    '6. Reka e Allagës, Kosova',
+    '7. Liqinat i Kuçishtës, Kosova',
+    '8. Babino Polje, Karadağ',
+    '9. Plav, Karadağ',
+    '10. Vusanje, Karadağ'
   ];
 
-  const services = [
+  const routeStages = [
+    { href: '/rotada/theth-valbone', title: 'Theth - Valbonë', day: 'Gün 1', distance: '17 km', duration: '6-7 saat', difficulty: 'Orta' },
+    { href: '/rotada/valbone-cerem', title: 'Valbonë - Çerem', day: 'Gün 2', distance: '14 km', duration: '5-6 saat', difficulty: 'Kolay' },
+    { href: '/rotada/cerem-doberdol', title: 'Çerem - Dobërdol', day: 'Gün 3', distance: '20 km', duration: '7-8 saat', difficulty: 'Orta' },
+    { href: '/rotada/doberdol-milishevc', title: 'Dobërdol - Milishevc', day: 'Gün 4', distance: '18 km', duration: '6-7 saat', difficulty: 'Zor' },
+    { href: '/rotada/milishevc-reka-allages', title: 'Milishevc - Reka e Allagës', day: 'Gün 5', distance: '21 km', duration: '7-8 saat', difficulty: 'Orta' },
+    { href: '/rotada/reka-allages-kuqishte', title: 'Reka e Allagës - Liqenat i Kuqishtës', day: 'Gün 6', distance: '16 km', duration: '6-7 saat', difficulty: 'Orta' },
+    { href: '/rotada/kuqishte-babino-polje', title: 'Liqenat i Kuqishtës - Babino Polje', day: 'Gün 7', distance: '19 km', duration: '7-8 saat', difficulty: 'Zor' },
+    { href: '/rotada/babino-polje-plav', title: 'Babino Polje - Plav', day: 'Gün 8', distance: '15 km', duration: '5-6 saat', difficulty: 'Kolay' },
+    { href: '/rotada/plav-vusanje', title: 'Plav - Vusanje', day: 'Gün 9', distance: '22 km', duration: '8-9 saat', difficulty: 'Orta' },
+    { href: '/rotada/vusanje-theth', title: 'Vusanje - Theth', day: 'Gün 10', distance: '25 km', duration: '9-10 saat', difficulty: 'Zor' },
+  ];
+
+  const difficultyLevels = [
     {
-      icon: Home,
-      title: 'Konaklama',
-      description: 'Bölge, sakinlerinin misafirperverliği ile tanınır. Ziyaretçiler, her üç ülkede de rota boyunca bulunan geleneksel evlerde konaklayabilirler. Konaklama çeşitliliği, "Kula" adı verilen geleneksel taş evlerden dağ kulübelerine ve yerel ev sahiplerinin yerel ve ev yapımı yemekleri servis ettiği küçük dağ lojlarına kadar uzanır. Mümkün olduğunda, kalacak yer garanti etmek için önceden rezervasyon yapmanız kesinlikle tavsiye edilir.'
+      level: 'Kolay',
+      color: 'text-green-600',
+      bgColor: 'bg-green-50',
+      description: 'Sadece hafif yokuşlar, rahat yollar ve harita olmadan bile kolay yönlendirme.'
     },
     {
-      icon: Utensils,
-      title: 'Yiyecek ve İçecek',
-      description: 'Rota kısmen ıssız dağlık bölgelerden geçtiği ve yürüyüşler bazen bir konaklamadan diğerine oldukça uzun olduğu için, her zaman yanınızda yeterli su ve yiyecek bulundurmanız kesinlikle tavsiye edilir. Bakkallar çok nadir olup sadece Pejë veya Shkodër gibi büyük köyler veya küçük kasabalarda bulunabilir.'
+      level: 'Orta',
+      color: 'text-yellow-600',
+      bgColor: 'bg-yellow-50',
+      description: 'İşaretli bir yolu takip eder, muhtemelen dik yokuşlar ve düşme riski vardır. Temel yönlendirme becerileri ve sağlam adımlar gereklidir.'
+    },
+    {
+      level: 'Zor',
+      color: 'text-red-600',
+      bgColor: 'bg-red-50',
+      description: 'Genellikle belirgin bir yol yoktur. Arazi, araziyi doğru değerlendirme yeteneği ve mükemmel yönlendirme becerileri gerektirir.'
     }
-  ];
-
-  const markings = [
-    { country: 'Arnavutluk', colors: 'Beyaz/Kırmızı/Beyaz' },
-    { country: 'Kosova', colors: 'Kırmızı/Beyaz/Kırmızı' },
-    { country: 'Karadağ', colors: 'Kırmızı daire/Beyaz dolgu' },
   ];
 
   return (
     <>
       <Navigation />
       
-      <section className="pt-32 pb-16 bg-gradient-to-b from-primary-50 to-white">
-        <div className="container mx-auto px-4">
-          <h1 className="font-display text-4xl md:text-5xl font-bold text-center mb-6">
-            Rotada
+      <section className="pt-32 pb-16 bg-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
+            ROTA AÇIKLAMASI
           </h1>
-          <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto mb-8">
-            Balkanların Zirveleri Rotası üzerindeki hizmetler ve bilmeniz gerekenler
-          </p>
-          
-          <div 
-            className="relative h-96 rounded-2xl overflow-hidden mb-12"
-            style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1464822759844-d150baec93d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          >
-            <div className="absolute inset-0 bg-black/30" />
-          </div>
+          <div className="border-b-2 border-primary-600 w-24 mb-8"></div>
         </div>
       </section>
 
-      <section className="section-padding bg-white">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="font-display text-3xl font-bold text-center mb-12">
-            Rota Etapları
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-6 mb-16">
-            {routeStages.map((stage, index) => (
-              <Link
-                key={stage.href}
-                href={stage.href}
-                className="group bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-all duration-300"
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-sm font-medium text-primary-600 bg-primary-50 px-3 py-1 rounded-full">
-                    {stage.subtitle}
-                  </span>
-                  <ChevronRight className="w-5 h-5 text-gray-400 group-hover:text-primary-600 transition-colors" />
-                </div>
-                <h3 className="font-display text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
-                  {stage.title}
-                </h3>
-                <p className="text-gray-600">{stage.country}</p>
-              </Link>
-            ))}
-          </div>
-
-          <div className="space-y-12">
-            <div>
-              <h2 className="font-display text-2xl font-bold mb-8">Rotadaki Hizmetler</h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                {services.map((service, index) => {
-                  const Icon = service.icon;
-                  return (
-                    <div key={index} className="bg-gray-50 rounded-xl p-6">
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <Icon className="w-6 h-6 text-primary-600" />
-                        </div>
-                        <div>
-                          <h3 className="font-display text-xl font-bold mb-3">{service.title}</h3>
-                          <p className="text-gray-600 leading-relaxed">{service.description}</p>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            <div>
-              <h2 className="font-display text-2xl font-bold mb-8">İşaretleme ve Yönlendirme</h2>
-              <div className="bg-blue-50 rounded-xl p-8 mb-8">
-                <p className="text-lg text-blue-900 mb-6">
-                  Balkanların Zirveleri rotasının tamamı, aşağıdaki işaretleme sistemleri ve 
-                  rota boyunca kurulmuş Balkanların Zirveleri yönlendirme levhaları ile işaretlenmiştir.
-                </p>
-                
-                <h3 className="font-semibold text-lg mb-4 text-blue-900">Balkanların Zirveleri İşaretlemeleri</h3>
-                
-                <div className="space-y-3">
-                  {markings.map((marking, index) => (
-                    <div key={index} className="flex items-center justify-between bg-white rounded-lg p-4">
-                      <span className="font-semibold text-gray-900">{marking.country}:</span>
-                      <span className="text-gray-700">{marking.colors}</span>
-                    </div>
+      <section className="pb-16 bg-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          {/* Fast Facts Section */}
+          <div className="bg-primary-50 rounded-lg p-8 mb-12">
+            <h2 className="font-display text-2xl font-bold mb-6 text-primary-900">HIZLI BİLGİLER:</h2>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div>
+                <h3 className="font-bold text-lg mb-4">Konaklama Noktaları</h3>
+                <div className="space-y-2">
+                  {overnights.map((overnight, index) => (
+                    <p key={index} className="text-gray-700">{overnight}</p>
                   ))}
                 </div>
               </div>
-            </div>
-
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-8">
-              <div className="flex items-start gap-4">
-                <AlertTriangle className="w-8 h-8 text-amber-600 flex-shrink-0 mt-1" />
+              
+              <div className="space-y-6">
                 <div>
-                  <h3 className="font-semibold text-lg mb-4 text-amber-900">Önemli Uyarılar</h3>
-                  <div className="space-y-3 text-amber-800">
-                    <p>
-                      Rota boyunca çok az çöp bertaraf tesisi bulunduğu için lütfen şunu unutmayın:
-                    </p>
-                    <p className="font-semibold">
-                      Sadece fotoğraf çekin, sadece ayak izi bırakın ve çöpünüzü en yakın çöp kutusuna götürün!
-                    </p>
+                  <h3 className="font-bold text-lg mb-3">Rota Özeti</h3>
+                  <p className="text-gray-700 mb-4">
+                    Oldukça iddialı "Balkanların Zirveleri" rotası 192 km'lik bir mesafeyi kapsar ve üç ülkeyi geçerek bir döngü tamamlar.
+                  </p>
+                  <p className="text-gray-700">
+                    Dobërdol (Arnavutluk) ve Milishevc (Kosova) sınır bölgesinde deniz seviyesinin 2300 metre üzerine kadar çıkan yüksek alpin manzaralardan geçer.
+                  </p>
+                </div>
+                
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white rounded-lg p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <MapPin className="w-5 h-5 text-primary-600" />
+                      <span className="font-semibold">Mesafe</span>
+                    </div>
+                    <p className="text-2xl font-bold text-primary-600">192 km</p>
+                  </div>
+                  
+                  <div className="bg-white rounded-lg p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Clock className="w-5 h-5 text-primary-600" />
+                      <span className="font-semibold">Süre</span>
+                    </div>
+                    <p className="text-2xl font-bold text-primary-600">10-13 gün</p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Main Content */}
+          <div className="prose prose-lg max-w-none mb-12">
+            <p className="text-gray-700 mb-6">
+              Yürüyüşe her ülkeden başlanabilir: Theth (Arnavutluk); Plav (Karadağ); veya Pejë (Kosova) küçük kasabasından. 
+              Rotanın 10 etabı, yürüyüşçünün motivasyonu ve kondisyonuna bağlı olarak 10 ila 13 günde yürünebilir.
+            </p>
+            
+            <p className="text-gray-700 mb-6">
+              Zorluk seviyesi kolaydan ortaya kadar değişir, ancak iyi bir fiziksel kondisyon ve dağ ekipmanı gerektirir 
+              (örneğin yürüyüş botları, su geçirmez giysiler, lambalar, GPS, ilk yardım kiti, cep telefonu).
+            </p>
+            
+            <p className="text-gray-700 mb-6">
+              Tüm rota işaretli ve levhalı olmasına rağmen, kısmen ıssız dağlık bölgelerden geçer. 
+              Bu nedenle, bir grupta veya bir yürüyüş rehberi eşliğinde yürümek tavsiye edilir.
+            </p>
+
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 my-8">
+              <p className="text-blue-900">
+                <strong>DAV (Deutscher Alpen Verein) tarafından eğitilmiş</strong> ve rotayı bilen yerel dağ rehberleri, 
+                bireylere ve küçük gruplara eşlik etmeye hazırdır.
+              </p>
+            </div>
+
+            <h2 className="font-display text-2xl font-bold mt-12 mb-6">GÜZERGAH SEÇENEKLERİ</h2>
+            
+            <p className="text-gray-700 mb-6">
+              Balkanların Zirveleri rotası, yürüyüşçülere çeşitli seçenekler sunar. Ana döngü rotasının yanı sıra, 
+              daha kısa alternatifler veya belirli bölümlerde yürüyüş yapmak da mümkündür.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h4 className="font-bold text-lg mb-3">Tam Döngü Rotası</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• 192 km tam döngü</li>
+                  <li>• 10-13 gün süre</li>
+                  <li>• Üç ülkeyi kapsayan tam deneyim</li>
+                  <li>• En popüler seçenek</li>
+                </ul>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h4 className="font-bold text-lg mb-3">Kısaltılmış Rotalar</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Theth-Valbonë-Çerem (3 gün)</li>
+                  <li>• Valbonë-Dobërdol-Milishevc (4 gün)</li>
+                  <li>• Plav-Vusanje-Theth (3 gün)</li>
+                  <li>• Özel rota planlaması mümkün</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Technical Details */}
+          <div className="bg-gray-50 rounded-lg p-8 mb-12">
+            <h3 className="font-display text-2xl font-bold mb-6">Teknik Detaylar</h3>
+            
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-white rounded-lg p-6">
+                <Mountain className="w-8 h-8 text-primary-600 mb-3" />
+                <h4 className="font-semibold mb-2">Yükseklik</h4>
+                <p className="text-sm text-gray-600 mb-1">Min: 670 metre (Çerem yakınları)</p>
+                <p className="text-sm text-gray-600">Max: 2,290 metre (Dobërdol-Milishevc)</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-6">
+                <div className="w-8 h-8 text-primary-600 mb-3">↗</div>
+                <h4 className="font-semibold mb-2">Toplam Tırmanış</h4>
+                <p className="text-2xl font-bold text-primary-600">~9,800 m</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-6">
+                <div className="w-8 h-8 text-primary-600 mb-3">↘</div>
+                <h4 className="font-semibold mb-2">Toplam İniş</h4>
+                <p className="text-2xl font-bold text-primary-600">~9,900 m</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Difficulty Levels */}
+          <div className="mb-12">
+            <h3 className="font-display text-2xl font-bold mb-6">Zorluk Seviyeleri</h3>
+            <p className="text-gray-700 mb-6">
+              Balkanların Zirveleri Rotası boyunca zorluk seviyesi kolaydan ortaya kadar değişir.
+            </p>
+            
+            <div className="space-y-4">
+              {difficultyLevels.map((level, index) => (
+                <div key={index} className={`${level.bgColor} rounded-lg p-6`}>
+                  <h4 className={`font-bold text-lg mb-2 ${level.color}`}>
+                    {level.level}
+                  </h4>
+                  <p className="text-gray-700">{level.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* GPS Data Info */}
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-12">
+            <div className="flex items-start gap-4">
+              <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+              <div>
+                <h4 className="font-semibold text-lg mb-2">GPS Verileri</h4>
+                <p className="text-gray-700 mb-2">
+                  Farklı bölümlerde sağlanan GPS (UTM) verileri üç kısımdan oluşur:
+                </p>
+                <p className="text-gray-700">
+                  Waypoint numarası, UTM koordinatları ve yükseklik. Metin içinde, waypoint numaraları 
+                  (örn. WP 1) her açıklamanın sonunda listelenen öğelere atıfta bulunur.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Route Stages - Detailed */}
+          <div>
+            <h3 className="font-display text-2xl font-bold mb-6">Rota Etapları</h3>
+            <p className="text-gray-700 mb-6">
+              Aşağıda Balkanların Zirveleri rotasının tüm etapları listelenmiştir. Her etap detay sayfasında 
+              GPS koordinatları, yükseklik profili ve detaylı açıklamalar bulunmaktadır.
+            </p>
+            <div className="space-y-4">
+              {routeStages.map((stage, index) => (
+                <Link
+                  key={stage.href}
+                  href={stage.href}
+                  className="block bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 group"
+                >
+                  <div className="flex items-center justify-between">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-4 mb-2">
+                        <span className="text-sm font-medium text-primary-600 bg-primary-50 px-3 py-1 rounded-full">
+                          {stage.day}
+                        </span>
+                        <span className={`text-sm font-medium px-3 py-1 rounded-full ${
+                          stage.difficulty === 'Kolay' ? 'bg-green-50 text-green-600' :
+                          stage.difficulty === 'Orta' ? 'bg-yellow-50 text-yellow-600' :
+                          'bg-red-50 text-red-600'
+                        }`}>
+                          {stage.difficulty}
+                        </span>
+                      </div>
+                      <h4 className="font-display text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                        {stage.title}
+                      </h4>
+                      <div className="flex items-center gap-6 text-sm text-gray-600">
+                        <span className="flex items-center gap-1">
+                          <MapPin className="w-4 h-4" />
+                          {stage.distance}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="w-4 h-4" />
+                          {stage.duration}
+                        </span>
+                      </div>
+                    </div>
+                    <ChevronRight className="w-6 h-6 text-gray-400 group-hover:text-primary-600 transition-colors" />
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Additional Information Section */}
+          <div className="mt-16 border-t pt-12">
+            <h3 className="font-display text-2xl font-bold mb-6">ÖNEMLİ BİLGİLER</h3>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-bold text-lg mb-4 flex items-center gap-2">
+                  <Home className="w-5 h-5 text-primary-600" />
+                  Konaklama
+                </h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Geleneksel dağ evleri (guest house)</li>
+                  <li>• Yerel ailelerle konaklamalar</li>
+                  <li>• Temel dağ barınakları</li>
+                  <li>• Çadır kampı seçenekleri (bazı noktalarda)</li>
+                  <li>• Önceden rezervasyon şiddetle tavsiye edilir</li>
+                </ul>
+              </div>
+              
+              <div>
+                <h4 className="font-bold text-lg mb-4 flex items-center gap-2">
+                  <Utensils className="w-5 h-5 text-primary-600" />
+                  Yemek ve Su
+                </h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Konaklamalarda yerel yemekler</li>
+                  <li>• Kahvaltı ve akşam yemeği genelde dahil</li>
+                  <li>• Öğle yemeği için paket servis mümkün</li>
+                  <li>• Su kaynaklarına erişim değişken</li>
+                  <li>• Su arıtma tabletleri tavsiye edilir</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mt-8">
+              <div className="flex items-start gap-4">
+                <AlertTriangle className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h4 className="font-semibold text-lg mb-2">Güvenlik Uyarıları</h4>
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Hava koşulları hızla değişebilir - her zaman hazırlıklı olun</li>
+                    <li>• Bazı bölümlerde cep telefonu sinyali yoktur</li>
+                    <li>• Acil durum numaralarını kaydedin</li>
+                    <li>• Seyahat sigortası yaptırın</li>
+                    <li>• Rotadan ayrılmayın ve işaretleri takip edin</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-primary-50 rounded-lg">
+              <h4 className="font-bold text-lg mb-4">İletişim ve Destek</h4>
+              <p className="text-gray-700 mb-4">
+                Rota hakkında daha fazla bilgi, rehber rezervasyonu veya acil durumlar için 
+                yerel turizm ofisleri ve dağcılık kulüpleri ile iletişime geçebilirsiniz.
+              </p>
+              <div className="flex gap-4">
+                <Link 
+                  href="/iletisim" 
+                  className="bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors inline-flex items-center gap-2"
+                >
+                  İletişim Bilgileri
+                  <ChevronRight className="w-4 h-4" />
+                </Link>
+                <Link 
+                  href="/tavsiyeler" 
+                  className="bg-white text-primary-600 border border-primary-600 px-6 py-3 rounded-lg hover:bg-primary-50 transition-colors inline-flex items-center gap-2"
+                >
+                  Seyahat Tavsiyeleri
+                  <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           </div>
