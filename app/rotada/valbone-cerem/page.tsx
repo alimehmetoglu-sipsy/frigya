@@ -1,7 +1,7 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import { ArrowLeft, Clock, TrendingUp, MapPin, AlertCircle } from 'lucide-react';
+import { ArrowLeft, Clock, TrendingUp, MapPin, AlertCircle, Car } from 'lucide-react';
 
 export default function ValboneCeremPage() {
   return (
@@ -29,22 +29,22 @@ export default function ValboneCeremPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
             <div className="bg-white rounded-lg p-4 text-center border border-gray-200">
               <MapPin className="w-6 h-6 text-primary-600 mx-auto mb-2" />
-              <div className="text-lg font-bold">14 km</div>
+              <div className="text-lg font-bold">19.8 km</div>
               <div className="text-sm text-gray-600">Mesafe</div>
             </div>
             <div className="bg-white rounded-lg p-4 text-center border border-gray-200">
               <Clock className="w-6 h-6 text-primary-600 mx-auto mb-2" />
-              <div className="text-lg font-bold">6-7 saat</div>
+              <div className="text-lg font-bold">7 saat</div>
               <div className="text-sm text-gray-600">Süre</div>
             </div>
             <div className="bg-white rounded-lg p-4 text-center border border-gray-200">
               <TrendingUp className="w-6 h-6 text-primary-600 mx-auto mb-2" />
-              <div className="text-lg font-bold">800m</div>
+              <div className="text-lg font-bold">541m</div>
               <div className="text-sm text-gray-600">Tırmanış</div>
             </div>
             <div className="bg-white rounded-lg p-4 text-center border border-gray-200">
               <TrendingUp className="w-6 h-6 text-orange-600 mx-auto mb-2 rotate-180" />
-              <div className="text-lg font-bold">1200m</div>
+              <div className="text-lg font-bold">382m</div>
               <div className="text-sm text-gray-600">İniş</div>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function ValboneCeremPage() {
           <div 
             className="relative w-full h-96 rounded-2xl overflow-hidden mb-8"
             style={{
-              backgroundImage: `url('https://images.unsplash.com/photo-1551524164-6cf2ac531a87?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
+              backgroundImage: `url('https://images.unsplash.com/photo-1536431311719-398b6704d4cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
@@ -64,53 +64,192 @@ export default function ValboneCeremPage() {
             <div className="absolute inset-0 bg-black/20 rounded-2xl" />
           </div>
 
-          <div className="prose prose-lg max-w-none">
-            <h2>Rota Açıklaması</h2>
-            <p>
-              İkinci etap, Valbonë Vadisi'nden başlayarak Çerem köyüne doğru uzanır. Bu etap, 
-              rotanın en alçak noktalarından birine (670m) iner ve Arnavutluk'un kırsal yaşamına 
-              daha yakın bir bakış sunar.
-            </p>
-            
-            <p>
-              Valbonë'den çıkış yaparak önce orman alanlarından geçer, ardından açık çayırlar ve 
-              geleneksel tarım alanlarından geçerek Çerem'e varırsınız. Bu etap, önceki etaba 
-              göre daha az zorlu olmakla birlikte, uzun iniş bölümleri diz eklemleriniz için 
-              zorlayıcı olabilir.
-            </p>
+          <div className="bg-blue-50 rounded-xl p-6 mb-8">
+            <h2 className="font-display text-xl font-bold mb-4">Hızlı Bilgiler</h2>
+            <div className="grid md:grid-cols-2 gap-4 text-sm">
+              <div><strong>Minimum Yükseklik:</strong> 670 metre</div>
+              <div><strong>Maksimum Yükseklik:</strong> 1,156 metre</div>
+              <div><strong>Zorluk Seviyesi:</strong> Kolay</div>
+              <div><strong>İşaretleme:</strong> Beyaz/Kırmızı/Beyaz</div>
+            </div>
+          </div>
 
-            <h3>Öne Çıkan Noktalar</h3>
-            <ul>
-              <li>Valbonë Nehri boyunca yürüyüş</li>
-              <li>Geleneksel Arnavut çiftlik evleri</li>
-              <li>Çeşitli kuş türleri ve yabani yaşam</li>
-              <li>Rotanın en alçak noktası (670m)</li>
-            </ul>
+          <div className="space-y-8">
+            <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8">
+              <h2 className="font-display text-3xl font-bold mb-6 text-gray-900">Rota Açıklaması</h2>
+              
+              <div className="space-y-6">
+                <div className="bg-white rounded-xl p-6 border border-green-100">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-sm">1</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Genel Güzergah</h3>
+                      <p className="text-gray-700 leading-relaxed">
+                        Bu etap <strong>Valbonë'den Çerem köyüne</strong> transferi içerir. Çerem'e ulaşmak için 
+                        Fusha e Gjes Otel'den (WP 12) 20 kilometrelik çakıl yol boyunca taksi tutabilir veya 
+                        yürüyebilirsiniz. İki köyü bağlayan en kısa yol olan katır patikası erozyon nedeniyle 
+                        tahrip olmuştur.
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-            <h3>Zorluk Seviyesi</h3>
-            <p>
-              Bu etap <strong>kolay-orta</strong> zorluk seviyesindedir. Uzun iniş bölümleri 
-              nedeniyle diz koruyucu kullanımı tavsiye edilir. Patika çoğunlukla belirgin ve 
-              kolay takip edilebilir durumdadır.
-            </p>
+                <div className="bg-white rounded-xl p-6 border border-blue-100">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-sm">2</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Çerem Köyü Hakkında</h3>
+                      <p className="text-gray-700 leading-relaxed mb-3">
+                        Çerem, Valbonë'nin yaklaşık 17 kilometre kuzeydoğusunda bulunan, büyük ölçüde terk edilmiş 
+                        küçük bir köydür. Şu anda sadece yaz aylarında çobanlar tarafından iskan edilmektedir. 
+                        Kötü hava koşulları nedeniyle kış aylarında köy boştur.
+                      </p>
+                      <div className="bg-blue-50 rounded-lg p-3">
+                        <p className="text-blue-800 text-sm">
+                          <strong>Not:</strong> Köyü Valbonë ve Bajram Curri şehri ile bağlayan yol kışın kar nedeniyle kapalıdır.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-            <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
-              <h3 className="text-green-900 mt-0">Özel Deneyimler</h3>
-              <ul className="text-green-800 mb-0">
-                <li>Geleneksel Arnavut misafirperverliği</li>
-                <li>Yerel üretim bal ve organik ürünler</li>
-                <li>Çerem köyünde otantik köy yaşamı</li>
-                <li>Temiz dağ havası ve doğal sessizlik</li>
-              </ul>
+                <div className="bg-white rounded-xl p-6 border border-yellow-100">
+                  <div className="flex items-start gap-4">
+                    <div className="w-10 h-10 bg-yellow-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Car className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-lg mb-2 text-gray-900">Ulaşım Seçenekleri</h3>
+                      <p className="text-gray-700 leading-relaxed">
+                        Bu etap için iki seçeneğiniz var: <strong>taksi</strong> veya <strong>yürüyüş</strong>. 
+                        Fusha e Gjes Otel'deki personel taksi bulmanızda yardımcı olabilir. Yürüyüş rotası 
+                        boyunca konaklama imkanı bulunmamaktadır.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <h3 className="font-display text-2xl font-bold mb-6 text-gray-900">Detaylı Güzergah</h3>
+              
+              <div className="space-y-6">
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xs">A</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Başlangıç - Fusha e Gjes Otel</h4>
+                    <p className="text-gray-700">
+                      Yürüyüş/sürüş, Valbonë merkezinin yaklaşık 3.5 kilometre güneybatısında bulunan 
+                      Hotel Fusha e Gjes'ten (WP 12) başlar. Rragam ile Valbonë'yi bağlayan ana 
+                      (asfaltlanmamış) yol boyunca kuzeybatıya doğru ilerliyoruz.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xs">B</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Valbonë Merkezi</h4>
+                    <p className="text-gray-700">
+                      Otelden yaklaşık 1 kilometre sonra bir köprüyü geçiyoruz (WP 1a). Birkaç kilometre 
+                      ileride, köy merkezine yakın ana yolun yanında bulunan Valbonë Turist Bilgi Merkezi'ni 
+                      (WP 2a) buluyoruz. Misafirhanelerin ve diğer tesislerin çoğu burada bulunur.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xs">C</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Çerem Yol Ayrımı</h4>
+                    <p className="text-gray-700">
+                      Ana yolu takip edin ve yaklaşık 7 kilometre sonra kavşakta (WP 4a) Çerem köyüne 
+                      doğru sola dönün. Bu kavşakta sağa dönerseniz, rota sizi Dragobi köyüne ve ardından 
+                      Bajram Curri şehrine götürür.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xs">D</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Dere Geçişi</h4>
+                    <p className="text-gray-700">
+                      Bir sonraki kavşakta (WP 5a) sola dönün ve çakıl yolu takip edin. Birkaç kilometre 
+                      sonra, yolun üzerinden akan bir dereyi geçiyoruz (WP 6a).
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xs">E</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Çerem Köyüne Varış</h4>
+                    <p className="text-gray-700">
+                      Çakıl yolu 2 kilometre daha takip ediyoruz, sonra nehri geçip Çerem merkezine 
+                      yaklaşıyoruz (WP 7a). Çerem, gecelemek veya misafirperver alpin kulübelerinden 
+                      birinde mola vermek için iyi bir seçenektir.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 bg-gradient-to-r from-blue-100 to-green-100 rounded-lg p-6">
+                <h4 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-primary-600" />
+                  Konaklama Önerisi
+                </h4>
+                <p className="text-gray-700">
+                  <strong>Hysen Sula Misafirhanesi</strong> (WP 8a) - Çerem köyünde konforlu konaklama imkanı sunar.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-orange-50 rounded-2xl p-6">
+              <div className="flex items-start gap-4">
+                <TrendingUp className="w-8 h-8 text-orange-600 flex-shrink-0" />
+                <div>
+                  <h3 className="font-display text-xl font-bold mb-3 text-orange-900">Zorluk Seviyesi</h3>
+                  <p className="text-orange-800 mb-4">
+                    Bu etap <strong>kolay</strong> zorluk seviyesindedir. Çoğunlukla çakıl yol üzerinde 
+                    yürüyüş veya araç transferi içerir.
+                  </p>
+                  
+                  <div className="bg-white rounded-lg p-4">
+                    <h4 className="font-semibold text-orange-900 mb-2">Dikkat Edilecek Hususlar:</h4>
+                    <ul className="space-y-1 text-sm text-orange-800">
+                      <li>• Uzun mesafe nedeniyle taksi tercih edilebilir</li>
+                      <li>• Yürüyüş yapacaksanız su ve yiyecek bulundurun</li>
+                      <li>• Rota boyunca konaklama yok</li>
+                      <li>• Çerem'de sınırlı imkanlar var</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 my-8">
               <h3 className="text-blue-900 mt-0">Pratik Bilgiler</h3>
               <ul className="text-blue-800 mb-0">
-                <li>Su kaynağı: Valbonë Nehri boyunca su mevcut (arıtma tabletiyle)</li>
-                <li>Konaklama: Çerem'de yerel aile evleri</li>
-                <li>Market: Temel ihtiyaçlar için küçük dükkân</li>
-                <li>İletişim: Sınırlı mobil sinyal</li>
+                <li>En iyi ziyaret zamanı: Haziran - Ekim</li>
+                <li>Su kaynağı: Valbonë merkezi ve Çerem'de mevcut</li>
+                <li>Konaklama: Çerem'de Hysen Sula misafirhanesi</li>
+                <li>Taksi: Fusha e Gjes Otel'den ayarlanabilir</li>
               </ul>
             </div>
 
@@ -120,26 +259,40 @@ export default function ValboneCeremPage() {
                 <div>
                   <h3 className="text-amber-900 mt-0">Uyarılar ve Tavsiyeler</h3>
                   <ul className="text-amber-800 mb-0">
-                    <li>Uzun iniş bölümlerinde dikkatli olun</li>
-                    <li>Diz bandı veya koruyucu kullanın</li>
-                    <li>Su arıtma tableti veya filtre bulundurun</li>
-                    <li>Çerem'de konaklama için önceden haber verin</li>
+                    <li>Çerem köyü yaz ayları dışında boş olabilir</li>
+                    <li>Kış aylarında yol kar nedeniyle kapalı</li>
+                    <li>Taksi rezervasyonunu önceden yapın</li>
+                    <li>Yürüyecekseniz erken başlayın (20 km uzunluğunda)</li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <h3>GPS Waypoint'leri</h3>
+            <h3>UTM Waypoint'leri</h3>
             <div className="bg-gray-50 rounded-lg p-4">
               <p className="text-sm text-gray-600 mb-4">
                 Koordinatlara tıklayarak Google Maps'te açabilirsiniz
               </p>
-              <div className="font-mono text-sm space-y-1">
-                <p>WP 1: <a href="https://www.google.com/maps/search/?api=1&query=42.43472,19.86167" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">N 42°26'05" E 19°51'42"</a> (1200m) - Valbonë Köy Merkezi</p>
-                <p>WP 2: <a href="https://www.google.com/maps/search/?api=1&query=42.455,19.8875" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">N 42°27'18" E 19°53'15"</a> (1000m) - Nehir Geçişi</p>
-                <p>WP 3: <a href="https://www.google.com/maps/search/?api=1&query=42.479,19.908" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">N 42°28'45" E 19°54'32"</a> (850m) - Orman Çıkışı</p>
-                <p>WP 4: <a href="https://www.google.com/maps/search/?api=1&query=42.489,19.922" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">N 42°29'22" E 19°55'18"</a> (670m) - Çerem Köyü</p>
+              <div className="grid md:grid-cols-2 gap-2 font-mono text-xs">
+                <p>WP 12: <a href="https://www.google.com/maps/search/?api=1&query=42.35066,19.87497" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T407097 4697679</a>, 995m - Fusha e Gjes Otel</p>
+                <p>WP 1a: <a href="https://www.google.com/maps/search/?api=1&query=42.35565,19.87974" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T407468 4698259</a>, 986m - Köprü</p>
+                <p>WP 2a: <a href="https://www.google.com/maps/search/?api=1&query=42.36789,19.88986" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T408260 4699582</a>, 956m - Valbonë Turist Merkezi</p>
+                <p>WP 3a: <a href="https://www.google.com/maps/search/?api=1&query=42.37777,19.89658" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T408772 4700569</a>, 935m - Valbonë merkezi</p>
+                <p>WP 4a: <a href="https://www.google.com/maps/search/?api=1&query=42.36652,19.95894" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T414397 4699325</a>, 672m - Çerem yol ayrımı (sola)</p>
+                <p>WP 5a: <a href="https://www.google.com/maps/search/?api=1&query=42.37637,19.95066" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T413686 4700449</a>, 798m - Kavşak (sola)</p>
+                <p>WP 6a: <a href="https://www.google.com/maps/search/?api=1&query=42.40201,19.96421" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T414761 4703230</a>, 1058m - Dere geçişi</p>
+                <p>WP 7a: <a href="https://www.google.com/maps/search/?api=1&query=42.41834,19.96231" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T414611 4705051</a>, 1139m - Çerem merkezi</p>
+                <p>WP 8a: <a href="https://www.google.com/maps/search/?api=1&query=42.41945,19.96401" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">34T414751 4705175</a>, 1155m - Hysen Sula misafirhanesi</p>
               </div>
+            </div>
+
+            <div className="bg-green-50 border border-green-200 rounded-lg p-6 my-8">
+              <h3 className="text-green-900 mt-0">Alternatif Rota</h3>
+              <p className="text-green-800 mb-0">
+                Katır patikası (en kısa yol) eskiden iki köyü bağlardı ancak erozyon nedeniyle tahrip olmuştur. 
+                Bu nedenle şu anda ana yol tek güvenli seçenektir. Yürüyüş yapmak isteyenler için 20 kilometrelik 
+                çakıl yol boyunca manzara eşliğinde keyifli bir yürüyüş olabilir, ancak taksi daha pratik bir seçimdir.
+              </p>
             </div>
           </div>
 
