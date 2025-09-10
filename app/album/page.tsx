@@ -41,144 +41,144 @@ export default function AlbumPage() {
     }
   ];
 
-  // Real Albania gallery images from peaksofthebalkans.com
+  // Real Albania gallery images from peaksofthebalkans.com - with correct thumbnail/full-size mappings
   const albaniaPhotos = [
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/7026d21def08d2dcd62468aaae503ed9.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/1f2fe7149a06ffa71e2fb58393896b08.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/1f2fe7149a06ffa71e2fb58393896b08_290x193.jpg',
       title: 'Theth Vadisi', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/1f2fe7149a06ffa71e2fb58393896b08_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/6068f69f2e75b22cb516d67ba5009e30.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/6068f69f2e75b22cb516d67ba5009e30_290x193.jpg',
       title: 'Valbonë Milli Parkı', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/6068f69f2e75b22cb516d67ba5009e30_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/3916f161e9884f015706e5552812880e.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/3916f161e9884f015706e5552812880e_290x193.jpg',
       title: 'Arnavut Alpleri', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/3916f161e9884f015706e5552812880e_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/56e49f44c933b68a9ae48062f6ba89cb.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/56e49f44c933b68a9ae48062f6ba89cb_290x193.jpg',
       title: 'Prokletije Dağları', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/56e49f44c933b68a9ae48062f6ba89cb_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/c6b18b10fae261238f12a5cca2645aaf.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/c6b18b10fae261238f12a5cca2645aaf_290x193.jpg',
       title: 'Çoban Yolu', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/c6b18b10fae261238f12a5cca2645aaf_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/268660ed9a4731795394b4d806e0742b.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/268660ed9a4731795394b4d806e0742b_290x193.jpg',
       title: 'Yüksek Dağlar', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/268660ed9a4731795394b4d806e0742b_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/100459e279ae0f40dcefc661305feafa.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/100459e279ae0f40dcefc661305feafa_290x193.jpg',
       title: 'Dağ Geçidi', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/100459e279ae0f40dcefc661305feafa_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/f41a3a99f90b491dce7fa813f7ff81d2.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/f41a3a99f90b491dce7fa813f7ff81d2_290x193.jpg',
       title: 'Theth Kilisesi', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/f41a3a99f90b491dce7fa813f7ff81d2_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/c95bba941c2196a60cedbc3b69394429.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/c95bba941c2196a60cedbc3b69394429_290x193.jpg',
       title: 'Valbonë Nehri', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/c95bba941c2196a60cedbc3b69394429_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/91ee4d245da07c26f28bcfafe76a19bb.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/91ee4d245da07c26f28bcfafe76a19bb_290x193.jpg',
       title: 'Kayalık Zirveler', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/91ee4d245da07c26f28bcfafe76a19bb_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/67fe99899f32a9edecc9d539bbe9218c.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/67fe99899f32a9edecc9d539bbe9218c_290x193.jpg',
       title: 'Yeşil Vadiler', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/67fe99899f32a9edecc9d539bbe9218c_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/14e6b99f4c898538f6aa5381e4cfddda.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/14e6b99f4c898538f6aa5381e4cfddda_290x193.jpg',
       title: 'Taş Evler', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/14e6b99f4c898538f6aa5381e4cfddda_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/74629f3c23784d2010c5d9684677ba08.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/74629f3c23784d2010c5d9684677ba08_290x193.jpg',
       title: 'Dağ Patikaları', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/74629f3c23784d2010c5d9684677ba08_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/1c3d8a795b6b7cfceb1f048bb6daeb7a.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/1c3d8a795b6b7cfceb1f048bb6daeb7a_290x193.jpg',
       title: 'Kır Çiçekleri', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/1c3d8a795b6b7cfceb1f048bb6daeb7a_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/14fe8ebc0aecbe48a7ed16d4cbf41bef.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/14fe8ebc0aecbe48a7ed16d4cbf41bef_290x193.jpg',
       title: 'Gün Batımı', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/14fe8ebc0aecbe48a7ed16d4cbf41bef_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/f103009397d219a8347686454271c87f.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/f103009397d219a8347686454271c87f_290x193.jpg',
       title: 'Yaylalar', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
-    // Additional full-size images found
+    // Additional images with working full-size URLs
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/f103009397d219a8347686454271c87f_1024x683.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/1037c3c3882fe3b3bdbb2514e26e5f8c.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/1037c3c3882fe3b3bdbb2514e26e5f8c_290x193.jpg',
       title: 'Dağ Manzarası', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/1037c3c3882fe3b3bdbb2514e26e5f8c.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/86265edbb40ec0ba50cf39e41b74672c.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/86265edbb40ec0ba50cf39e41b74672c_290x193.jpg',
       title: 'Vadi Görünümü', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/86265edbb40ec0ba50cf39e41b74672c.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/303accc862d787684e2faea284f07a21.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/303accc862d787684e2faea284f07a21_290x193.jpg',
       title: 'Köy Yaşamı', 
       location: 'Arnavutluk', 
       category: 'albania'
     },
     { 
-      src: 'https://peaksofthebalkans.com/gallery_gen/303accc862d787684e2faea284f07a21.jpg',
+      src: 'https://peaksofthebalkans.com/gallery_gen/675a38de488dad79f4058699b1ef85b9.jpg',
       thumbnail: 'https://peaksofthebalkans.com/gallery_gen/675a38de488dad79f4058699b1ef85b9_290x193.jpg',
       title: 'Dağ Kulübesi', 
       location: 'Arnavutluk', 
