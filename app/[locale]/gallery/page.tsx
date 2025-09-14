@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Navigation from '@/components/Navigation';
 import GalleryHeader from '@/components/gallery/GalleryHeader';
 import FilterBar from '@/components/gallery/FilterBar';
 import GalleryGrid from '@/components/gallery/GalleryGrid';
@@ -227,6 +228,7 @@ export default function GalleryPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Navigation />
       <GalleryHeader
         totalPhotos={photos.length}
         photographers={23}

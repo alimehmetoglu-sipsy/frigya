@@ -397,6 +397,180 @@
       "International trail marking standards with GPS coordinates and comprehensive waypoint system"
     ]
   },
+  "travelTips": {
+    "meta": {
+      "title": "Travel Tips | Phrygian Way Hiking Guide | Essential Preparation",
+      "description": "Complete travel guide for the Phrygian Way trail. Weather conditions, gear recommendations, safety tips, and practical advice for hiking Turkey's ancient 506km route.",
+      "keywords": "phrygian way travel tips, turkey hiking guide, trail preparation, hiking gear turkey, weather conditions cappadocia"
+    },
+    "hero": {
+      "title": "Essential Travel Tips",
+      "subtitle": "Your Complete Guide to the Phrygian Way",
+      "description": "Everything you need to know for a safe and memorable journey along Turkey's ancient 506km trail"
+    },
+    "bestTime": {
+      "title": "Best Time to Visit",
+      "subtitle": "Plan your journey for optimal conditions",
+      "spring": {
+        "title": "Spring (April - May)",
+        "description": "Mild temperatures, wildflowers in bloom, perfect visibility. Ideal for photography and comfortable hiking.",
+        "temperature": "15-20°C",
+        "conditions": "Mild, occasional rain"
+      },
+      "autumn": {
+        "title": "Autumn (September - October)",
+        "description": "Excellent weather, clear skies, comfortable temperatures. Peak season for hiking with best trail conditions.",
+        "temperature": "18-25°C",
+        "conditions": "Dry, clear skies"
+      },
+      "summer": {
+        "title": "Summer (June - August)",
+        "description": "Hot and dry, early morning starts recommended. Bring extra water and sun protection.",
+        "temperature": "25-35°C",
+        "conditions": "Hot, very dry"
+      },
+      "winter": {
+        "title": "Winter (November - March)",
+        "description": "Cold with possible snow. Only for experienced hikers with proper gear. Limited daylight hours.",
+        "temperature": "-5 to 10°C",
+        "conditions": "Cold, snow possible"
+      }
+    },
+    "categories": {
+      "weather": {
+        "title": "Weather & Climate",
+        "icon": "Cloud",
+        "content": "Central Anatolia experiences a continental climate with hot, dry summers and cold winters. Weather can change rapidly, especially in elevated areas around Yazılıkaya. Always check daily forecasts and be prepared for temperature variations.",
+        "tips": [
+          "Check weather forecasts daily and adjust your route if severe weather is expected",
+          "Temperatures can vary significantly between day and night - pack layers",
+          "Summer temperatures can exceed 35°C - start hiking early in the morning",
+          "Winter hiking requires experience and proper cold-weather gear",
+          "Rain is most common in spring and late autumn",
+          "Strong winds are possible on exposed ridges and plateaus"
+        ]
+      },
+      "gear": {
+        "title": "Essential Gear & Equipment",
+        "icon": "Backpack",
+        "content": "Proper equipment is crucial for safety and comfort on the Phrygian Way. The trail crosses diverse terrain from river valleys to rocky plateaus, requiring versatile gear suitable for all conditions.",
+        "tips": [
+          "Sturdy hiking boots with ankle support - essential for rocky terrain",
+          "Moisture-wicking clothing and thermal layers for temperature changes",
+          "Waterproof jacket and pants for unexpected weather",
+          "Sun hat, sunglasses, and high-SPF sunscreen",
+          "GPS device or smartphone with offline maps downloaded",
+          "First aid kit including blister treatment and pain relief",
+          "Headlamp with extra batteries for early starts or extended hiking",
+          "Trekking poles recommended for steep sections and rocky ground"
+        ]
+      },
+      "safety": {
+        "title": "Safety & Navigation",
+        "icon": "Shield",
+        "content": "The Phrygian Way passes through remote areas with limited cell phone coverage. Proper preparation and safety awareness are essential for a successful trek.",
+        "tips": [
+          "Always carry a GPS device or smartphone with offline maps",
+          "Download trail GPX files before departure",
+          "Inform someone of your daily itinerary and expected arrival times",
+          "Carry emergency contact information for local authorities",
+          "Consider hiring a local guide for complex navigation sections",
+          "Pack a whistle and mirror for emergency signaling",
+          "Learn basic Turkish phrases for emergency communication",
+          "Check with local authorities about current trail conditions"
+        ]
+      },
+      "accommodation": {
+        "title": "Accommodation & Logistics",
+        "icon": "Home",
+        "content": "Accommodation ranges from village guesthouses to camping under the stars. Advanced booking is recommended, especially during peak season.",
+        "tips": [
+          "Book accommodations in advance, especially in smaller villages",
+          "Carry camping gear as backup - wild camping is generally permitted",
+          "Village guesthouses offer authentic local experience and meals",
+          "Some stages have limited accommodation options - plan carefully",
+          "Luggage transfer services available for supported treks",
+          "Local transport connections may be limited - arrange transfers",
+          "Learn basic Turkish phrases for accommodation bookings",
+          "Carry cash - many rural areas don't accept cards"
+        ]
+      },
+      "health": {
+        "title": "Health & Hydration",
+        "icon": "Heart",
+        "content": "Staying healthy and hydrated is crucial for enjoying the full experience. The continental climate and physical demands require special attention to health needs.",
+        "tips": [
+          "Carry more water than you think you need - sources can be unreliable",
+          "Use water purification tablets for natural water sources",
+          "Pack high-energy snacks and electrolyte supplements",
+          "Protect against sun exposure - the plateau offers little shade",
+          "Bring personal medications and a comprehensive first aid kit",
+          "Consider altitude if coming from sea level - allow acclimatization time",
+          "Stretch daily to prevent muscle soreness and injury",
+          "Know the symptoms of heat exhaustion and hypothermia"
+        ]
+      },
+      "culture": {
+        "title": "Cultural Sensitivity",
+        "icon": "Users",
+        "content": "The Phrygian Way passes through traditional Turkish villages and sacred sites. Respectful behavior enhances the experience for everyone.",
+        "tips": [
+          "Dress modestly when visiting villages and religious sites",
+          "Ask permission before photographing people or private property",
+          "Learn basic Turkish greetings - locals appreciate the effort",
+          "Respect local customs and traditions",
+          "Support local economy by purchasing from village shops",
+          "Leave no trace - pack out all waste",
+          "Be respectful at archaeological sites - don't touch ancient structures",
+          "Follow photography restrictions at museums and heritage sites"
+        ]
+      }
+    },
+    "essentialItems": {
+      "title": "Essential Packing List",
+      "subtitle": "Don't forget these crucial items",
+      "items": [
+        "Sturdy hiking boots and comfortable walking socks",
+        "Waterproof jacket and pants",
+        "Thermal base layers and insulating mid-layers",
+        "Sun hat, warm hat, and gloves",
+        "GPS device or smartphone with offline maps",
+        "First aid kit with blister treatment",
+        "Headlamp and extra batteries",
+        "Water bottles and purification tablets",
+        "High-SPF sunscreen and lip balm",
+        "Trail snacks and electrolyte supplements",
+        "Multi-tool or knife",
+        "Emergency whistle and signaling mirror"
+      ]
+    },
+    "emergencyInfo": {
+      "title": "Emergency Information",
+      "subtitle": "Important contacts and procedures",
+      "police": "Police: 155",
+      "ambulance": "Ambulance: 112",
+      "fire": "Fire: 110",
+      "tourism": "Tourism Police: 153",
+      "content": "In case of emergency, call 112 for general emergency services. If possible, provide GPS coordinates of your location. Major towns along the route have medical facilities, but remote sections may require helicopter evacuation."
+    },
+    "additionalTips": {
+      "title": "Additional Recommendations",
+      "content": [
+        "Purchase travel insurance that covers hiking and adventure activities",
+        "Notify your bank of travel dates to avoid card blocks",
+        "Carry photocopies of important documents (passport, insurance)",
+        "Download offline translation apps for communication",
+        "Consider a satellite communicator for remote sections",
+        "Join online communities for current trail conditions and tips",
+        "Take rest days to explore cultural sites and recover",
+        "Be flexible with your itinerary - weather and conditions may require changes"
+      ]
+    },
+    "disclaimer": {
+      "title": "Important Disclaimer",
+      "content": "Hiking the Phrygian Way involves inherent risks. Participants undertake the trail at their own risk. Weather conditions, terrain difficulty, and remote locations require proper preparation and experience. Always inform someone of your plans and consider hiring local guides for complex sections."
+    }
+  },
   "common": {
     "readMore": "Read More",
     "viewDetails": "View Details",

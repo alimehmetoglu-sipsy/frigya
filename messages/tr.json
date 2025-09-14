@@ -257,5 +257,179 @@
       "Üstün toplum katılımı ve sürdürülebilir turizm geliştirme için tanındı",
       "GPS koordinatları ve kapsamlı yön işaret sistemi ile uluslararası patika işaretleme standartları"
     ]
+  },
+  "travelTips": {
+    "meta": {
+      "title": "Seyahat Tavsiyeleri | Frigya Yolu Yürüyüş Rehberi | Hazırlık Kılavuzu",
+      "description": "Frigya Yolu patikası için kapsamlı seyahat rehberi. Hava koşulları, ekipman önerileri, güvenlik ipuçları ve Türkiye'nin 506km'lik antik rotası için pratik tavsiyeler.",
+      "keywords": "frigya yolu seyahat tavsiyeleri, türkiye yürüyüş rehberi, patika hazırlığı, yürüyüş ekipmanları türkiye, hava koşulları kapadokya"
+    },
+    "hero": {
+      "title": "Temel Seyahat Tavsiyeleri",
+      "subtitle": "Frigya Yolu İçin Kapsamlı Rehberiniz",
+      "description": "Türkiye'nin antik 506km'lik patikasında güvenli ve unutulmaz bir yolculuk için bilmeniz gereken her şey"
+    },
+    "bestTime": {
+      "title": "En İyi Ziyaret Zamanı",
+      "subtitle": "Optimal koşullar için yolculuğunuzu planlayın",
+      "spring": {
+        "title": "İlkbahar (Nisan - Mayıs)",
+        "description": "Ilıman sıcaklıklar, çiçek açan yabani çiçekler, mükemmel görüş mesafesi. Fotoğraf çekimi ve rahat yürüyüş için ideal.",
+        "temperature": "15-20°C",
+        "conditions": "Ilıman, ara sıra yağmur"
+      },
+      "autumn": {
+        "title": "Sonbahar (Eylül - Ekim)",
+        "description": "Mükemmel hava, açık gökyüzü, rahat sıcaklıklar. En iyi patika koşullarıyla yürüyüş için sezon zirvesi.",
+        "temperature": "18-25°C",
+        "conditions": "Kuru, açık gökyüzü"
+      },
+      "summer": {
+        "title": "Yaz (Haziran - Ağustos)",
+        "description": "Sıcak ve kuru, sabah erken başlangıç önerilir. Ekstra su ve güneş koruması getirin.",
+        "temperature": "25-35°C",
+        "conditions": "Sıcak, çok kuru"
+      },
+      "winter": {
+        "title": "Kış (Kasım - Mart)",
+        "description": "Soğuk ve olası kar. Sadece uygun ekipmanı olan deneyimli yürüyüşçüler için. Sınırlı gün ışığı saatleri.",
+        "temperature": "-5 ila 10°C",
+        "conditions": "Soğuk, kar olasılığı"
+      }
+    },
+    "categories": {
+      "weather": {
+        "title": "Hava Koşulları ve İklim",
+        "icon": "Cloud",
+        "content": "İç Anadolu karasal iklim yaşar; sıcak, kuru yazlar ve soğuk kışlar. Hava, özellikle Yazılıkaya çevresindeki yüksek bölgelerde hızla değişebilir. Her zaman günlük tahminleri kontrol edin ve sıcaklık değişimlerine hazır olun.",
+        "tips": [
+          "Günlük hava tahminlerini kontrol edin ve şiddetli hava durumunda rotanızı ayarlayın",
+          "Gündüz ve gece arasındaki sıcaklıklar önemli ölçüde değişebilir - katmanlı giyinin",
+          "Yaz sıcaklıkları 35°C'yi aşabilir - sabah erken saatlerde yürümeye başlayın",
+          "Kış yürüyüşü deneyim ve uygun soğuk hava ekipmanı gerektirir",
+          "Yağmur en çok ilkbahar ve geç sonbaharda görülür",
+          "Açık sırtlarda ve platoarda güçlü rüzgarlar mümkündür"
+        ]
+      },
+      "gear": {
+        "title": "Temel Ekipman ve Malzemeler",
+        "icon": "Backpack",
+        "content": "Uygun ekipman, Frigya Yolu'nda güvenlik ve konfor için çok önemlidir. Patika, nehir vadilerinden kayalık platoları çeşitli arazi geçer ve tüm koşullar için uygun çok yönlü ekipman gerektirir.",
+        "tips": [
+          "Bilek desteği olan sağlam yürüyüş botları - kayalık arazi için gerekli",
+          "Nem atan giysiler ve sıcaklık değişimleri için termal katmanlar",
+          "Beklenmeyen hava koşulları için su geçirmez ceket ve pantolon",
+          "Güneş şapkası, güneş gözlüğü ve yüksek faktörlü güneş kremi",
+          "GPS cihazı veya çevrimdışı haritalar indirilmiş akıllı telefon",
+          "Nasır tedavisi ve ağrı kesici içeren ilk yardım kiti",
+          "Erken başlangıçlar veya uzun yürüyüşler için kafa lambası ve ekstra piller",
+          "Dik bölümler ve kayalık zemin için yürüyüş bastonu önerilir"
+        ]
+      },
+      "safety": {
+        "title": "Güvenlik ve Navigasyon",
+        "icon": "Shield",
+        "content": "Frigya Yolu, sınırlı cep telefonu kapsama alanına sahip uzak bölgelerden geçer. Başarılı bir trekking için uygun hazırlık ve güvenlik bilinci şarttır.",
+        "tips": [
+          "Her zaman GPS cihazı veya çevrimdışı haritası olan akıllı telefon taşıyın",
+          "Kalkıştan önce patika GPX dosyalarını indirin",
+          "Birilerine günlük güzergahınızı ve beklenen varış saatlerinizi bildirin",
+          "Yerel yetkililer için acil durum iletişim bilgilerini taşıyın",
+          "Karmaşık navigasyon bölümleri için yerel rehber kiralamayı düşünün",
+          "Acil durum sinyali için düdük ve ayna paketleyin",
+          "Acil durum iletişimi için temel Türkçe ifadeleri öğrenin",
+          "Mevcut patika koşulları hakkında yerel yetkililerle kontrol edin"
+        ]
+      },
+      "accommodation": {
+        "title": "Konaklama ve Lojistik",
+        "icon": "Home",
+        "content": "Konaklama, köy pansiyonlarından yıldızlar altında kamp yapmaya kadar değişir. Özellikle sezon zirvesinde önceden rezervasyon önerilir.",
+        "tips": [
+          "Özellikle küçük köylerde konaklama yerlerini önceden ayırtın",
+          "Yedek olarak kamp ekipmanı taşıyın - yabanıl kamp genel olarak izin verilir",
+          "Köy pansiyonları otantik yerel deneyim ve yemekler sunar",
+          "Bazı etaplarda sınırlı konaklama seçenekleri var - dikkatlice planlayın",
+          "Destekli trekkingler için bagaj transfer hizmetleri mevcuttur",
+          "Yerel ulaşım bağlantıları sınırlı olabilir - transferleri ayarlayın",
+          "Konaklama rezervasyonları için temel Türkçe ifadeleri öğrenin",
+          "Nakit taşıyın - birçok kırsal alan kart kabul etmez"
+        ]
+      },
+      "health": {
+        "title": "Sağlık ve Hidrasyon",
+        "icon": "Heart",
+        "content": "Sağlıklı kalmak ve su dengesini korumak, tam deneyimin tadını çıkarmak için çok önemlidir. Karasal iklim ve fiziksel talepler sağlık ihtiyaçlarına özel dikkat gerektirir.",
+        "tips": [
+          "Düşündüğünüzden daha fazla su taşıyın - kaynaklar güvenilir olmayabilir",
+          "Doğal su kaynakları için su arıtma tabletleri kullanın",
+          "Yüksek enerjili atıştırmalıklar ve elektrolit takviyelerini paketleyin",
+          "Güneş maruziyetine karşı korunun - plato çok az gölge sunar",
+          "Kişisel ilaçlar ve kapsamlı ilk yardım kiti getirin",
+          "Deniz seviyesinden geliyorsanız rakımı düşünün - alışma zamanı tanıyın",
+          "Kas ağrısını ve yaralanmayı önlemek için günlük stretching yapın",
+          "Sıcak çarpması ve hipotermi belirtilerini bilin"
+        ]
+      },
+      "culture": {
+        "title": "Kültürel Duyarlılık",
+        "icon": "Users",
+        "content": "Frigya Yolu geleneksel Türk köyleri ve kutsal alanlardan geçer. Saygılı davranış herkes için deneyimi geliştirir.",
+        "tips": [
+          "Köyleri ve dini mekanları ziyaret ederken mütevazı giyinin",
+          "İnsanları veya özel mülkleri fotoğraflamadan önce izin isteyin",
+          "Temel Türkçe selamlamaları öğrenin - yereller çabayı takdir eder",
+          "Yerel adet ve geleneklere saygı gösterin",
+          "Köy dükkanlarından satın alarak yerel ekonomiyi destekleyin",
+          "İz bırakmayın - tüm çöpleri toplayın",
+          "Arkeolojik alanlarda saygılı olun - antik yapılara dokunmayın",
+          "Müze ve miras alanlarındaki fotoğraf kısıtlamalarını takip edin"
+        ]
+      }
+    },
+    "essentialItems": {
+      "title": "Temel Paketleme Listesi",
+      "subtitle": "Bu önemli eşyaları unutmayın",
+      "items": [
+        "Sağlam yürüyüş botları ve rahat yürüyüş çorapları",
+        "Su geçirmez ceket ve pantolon",
+        "Termal iç katmanlar ve yalıtımlı orta katmanlar",
+        "Güneş şapkası, sıcak şapka ve eldiven",
+        "GPS cihazı veya çevrimdışı haritası olan akıllı telefon",
+        "Nasır tedavisi olan ilk yardım kiti",
+        "Kafa lambası ve ekstra piller",
+        "Su şişeleri ve arıtma tabletleri",
+        "Yüksek faktörlü güneş kremi ve dudak balmı",
+        "Patika atıştırmalıkları ve elektrolit takviyeleri",
+        "Çok amaçlı araç veya bıçak",
+        "Acil durum düdüğü ve sinyal aynası"
+      ]
+    },
+    "emergencyInfo": {
+      "title": "Acil Durum Bilgileri",
+      "subtitle": "Önemli iletişim bilgileri ve prosedürler",
+      "police": "Polis: 155",
+      "ambulance": "Ambulans: 112",
+      "fire": "İtfaiye: 110",
+      "tourism": "Turizm Polisi: 153",
+      "content": "Acil durumda genel acil servisler için 112'yi arayın. Mümkünse konumunuzun GPS koordinatlarını verin. Rota boyunca büyük kasabalarda tıbbi tesisler var, ancak uzak bölümler helikopter tahliyesi gerektirebilir."
+    },
+    "additionalTips": {
+      "title": "Ek Öneriler",
+      "content": [
+        "Yürüyüş ve macera etkinliklerini kapsayan seyahat sigortası yaptırın",
+        "Kart bloklarını önlemek için bankanıza seyahat tarihlerini bildirin",
+        "Önemli belgelerin fotokopilerini taşıyın (pasaport, sigorta)",
+        "İletişim için çevrimdışı çeviri uygulamaları indirin",
+        "Uzak bölümler için uydu iletişim cihazı düşünün",
+        "Güncel patika koşulları ve ipuçları için çevrimiçi topluluklara katılın",
+        "Kültürel alanları keşfetmek ve dinlenmek için dinlenme günleri alın",
+        "Güzergahınızda esnek olun - hava ve koşullar değişiklik gerektirebilir"
+      ]
+    },
+    "disclaimer": {
+      "title": "Önemli Sorumluluk Reddi",
+      "content": "Frigya Yolu'nda yürüyüş yapmak doğal riskler içerir. Katılımcılar patikayı kendi risklerinde üstlenirler. Hava koşulları, arazi zorluğu ve uzak konumlar uygun hazırlık ve deneyim gerektirir. Planlarınızı her zaman birine bildirin ve karmaşık bölümler için yerel rehberleri kiralayın."
+    }
   }
 }
