@@ -1,21 +1,21 @@
 import { MetadataRoute } from 'next';
 import { locales } from '@/i18n';
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://balkanlarinzirveleri.com';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://phrygianway.com';
 
 // Define static pages for each locale
 const staticPages = [
   '',
-  '/rotada',
-  '/rotada/theth-valbone',
-  '/rotada/valbone-cerem',
-  '/rotada/cerem-doberdol',
-  '/rotada/doberdol-milishevc',
-  '/rotada/milishevc-reka-allages',
-  '/rota-aciklamasi',
-  '/seyahat-tavsiyeleri',
-  '/tavsiyeler',
-  '/album'
+  '/routes',
+  '/routes/gordion-beylikopru',
+  '/routes/beylikopru-mulk',
+  '/routes/mulk-seyitgazi',
+  '/routes/seyitgazi-yazilikaya',
+  '/routes/yazilikaya-sivrihisar',
+  '/gallery',
+  '/travel-tips',
+  '/about',
+  '/contact'
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${baseUrl}/${locale}${page}`,
         lastModified: currentDate,
         changeFrequency: page === '' ? 'daily' : 'weekly',
-        priority: page === '' ? 1.0 : page.includes('/rotada') ? 0.8 : 0.6,
+        priority: page === '' ? 1.0 : page.includes('/routes') ? 0.8 : 0.6,
         alternates: {
           languages: Object.fromEntries(
             locales.map(l => [l, `${baseUrl}/${l}${page}`])

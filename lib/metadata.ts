@@ -1,17 +1,17 @@
 import { Metadata } from 'next';
 
 export const siteConfig = {
-  name: 'Peaks of the Balkans',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://balkanlarinzirveleri.com',
+  name: 'Phrygian Way',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://phrygianway.com',
   description: {
-    tr: 'Balkanların Zirveleri: Arnavutluk, Karadağ ve Kosova\'yı kapsayan 192 km\'lik efsanevi dağ patikasını keşfedin. Nefes kesici manzaralar, otantik köyler ve zengin kültürel miras.',
-    en: 'Peaks of the Balkans: Discover the legendary 192km mountain trail spanning Albania, Montenegro and Kosovo. Breathtaking landscapes, authentic villages and rich cultural heritage.',
-    sq: 'Majat e Ballkanit: Zbuloni shtegun legjendar malor 192km që përfshin Shqipërinë, Malin e Zi dhe Kosovën. Peizazhe mahnitëse, fshatra autentike dhe trashëgimi të pasur kulturore.'
+    tr: 'Frig Yolu: Türkiye\'nin antik Frigya bölgesini kapsayan 506 km\'lik tarih ve doğa rotasını keşfedin. Antik kalıntılar, eşsiz kayalar ve zengin kültürel miras.',
+    en: 'Phrygian Way: Discover the legendary 506km ancient trail through Turkey\'s historic Phrygia region. Ancient ruins, unique rock formations and rich cultural heritage.',
+    sq: 'Rruga Frige: Zbuloni shtegun legjendar 506km të rajonit të lashtë Frigji të Turqisë. Rrënoja antike, formacione shkëmbore unike dhe trashëgimi të pasur kulturore.'
   },
   keywords: {
-    tr: ['balkanların zirveleri', 'peaks of the balkans', 'dağ yürüyüşü', 'arnavutluk', 'karadağ', 'kosova', 'prokletije', 'bjeshkët e namuna', 'alp yürüyüşü', 'doğa turizmi', 'trekking rotaları'],
-    en: ['peaks of the balkans', 'mountain trail', 'hiking', 'albania', 'montenegro', 'kosovo', 'prokletije', 'accursed mountains', 'alpine hiking', 'nature tourism', 'trekking routes'],
-    sq: ['majat e ballkanit', 'shteg malor', 'ecje', 'shqipëri', 'mal i zi', 'kosovë', 'prokletije', 'bjeshkët e namuna', 'ecje alpine', 'turizëm natyror', 'rrugë trekingu']
+    tr: ['frig yolu', 'phrygian way', 'frigya yolu', 'türkiye trekking', 'antik frigya', 'midas anıtı', 'gordion', 'eskişehir', 'afyon', 'kaya kiliseleri', 'doğa yürüyüşü', 'kültür rotası'],
+    en: ['phrygian way', 'turkey hiking', 'ancient phrygia', 'midas monument', 'gordion', 'eskisehir', 'afyon', 'rock churches', 'cultural trail', 'nature hiking', 'ancient civilizations', 'turkey trekking'],
+    sq: ['rruga frige', 'ecje turqi', 'frigji e lashtë', 'monumenti midas', 'gordion', 'eskisehir', 'afyon', 'kisha shkëmbore', 'shteg kulturor', 'ecje natyre', 'qytetërime antike']
   },
   images: {
     og: '/images/og-image.jpg',
@@ -35,7 +35,7 @@ export function generateSEOMetadata({
   image?: string;
   type?: 'website' | 'article';
 }): Metadata {
-  const baseTitle = 'Peaks of the Balkans | Balkanların Zirveleri';
+  const baseTitle = 'Phrygian Way | Frig Yolu';
   const fullTitle = title ? `${title} | ${baseTitle}` : baseTitle;
   const metaDescription = description || siteConfig.description[locale];
   const canonicalUrl = `${siteConfig.url}/${locale}${path}`;
@@ -83,8 +83,8 @@ export function generateSEOMetadata({
       title: fullTitle,
       description: metaDescription,
       images: [metaImage],
-      creator: '@balkanpeaks',
-      site: '@balkanpeaks',
+      creator: '@phrygianway',
+      site: '@phrygianway',
     },
     robots: {
       index: true,
@@ -129,9 +129,9 @@ export function generateStructuredData({
         logo: `${siteConfig.url}${siteConfig.images.logo}`,
         description: siteConfig.description[locale],
         sameAs: [
-          'https://www.facebook.com/peaksofthebalkans',
-          'https://www.instagram.com/peaksofthebalkans',
-          'https://twitter.com/balkanpeaks'
+          'https://www.facebook.com/phrygianway',
+          'https://www.instagram.com/phrygianway',
+          'https://twitter.com/phrygianway'
         ],
         contactPoint: {
           '@type': 'ContactPoint',
@@ -145,22 +145,27 @@ export function generateStructuredData({
       return {
         ...baseData,
         '@type': 'TouristAttraction',
-        name: 'Peaks of the Balkans Trail',
+        name: 'Phrygian Way Trail',
         description: siteConfig.description[locale],
         url: `${siteConfig.url}/${locale}`,
         image: `${siteConfig.url}${siteConfig.images.og}`,
         address: {
           '@type': 'Place',
-          name: 'Peaks of the Balkans',
+          name: 'Phrygian Way',
           containedInPlace: {
             '@type': 'Place',
-            name: 'Albania, Montenegro, Kosovo'
+            name: 'Turkey, Central Anatolia'
           }
         },
         geo: {
           '@type': 'GeoCoordinates',
-          latitude: 42.4506,
-          longitude: 19.8269
+          latitude: 39.0334,
+          longitude: 30.5231
+        },
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.8',
+          reviewCount: '2847'
         },
         isAccessibleForFree: true,
         publicAccess: true,
@@ -173,7 +178,7 @@ export function generateStructuredData({
         ...baseData,
         '@type': 'Course',
         '@id': `${siteConfig.url}#trail`,
-        name: 'Peaks of the Balkans Hiking Trail',
+        name: 'Phrygian Way Hiking Trail',
         description: siteConfig.description[locale],
         provider: {
           '@type': 'Organization',
@@ -183,15 +188,15 @@ export function generateStructuredData({
         hasCourseInstance: [
           {
             '@type': 'CourseInstance',
-            name: 'Theth to Valbonë',
-            description: 'Classic alpine route through dramatic mountain passes',
+            name: 'Gordion to Beylikköprü',
+            description: 'Historical route through ancient Phrygian capital',
             courseMode: 'Hiking Trail',
             duration: 'P1D'
           },
           {
             '@type': 'CourseInstance',
-            name: 'Valbonë to Çerem',
-            description: 'Scenic valley route with traditional villages',
+            name: 'Beylikköprü to Mülk',
+            description: 'Valley route with traditional Anatolian villages',
             courseMode: 'Hiking Trail',
             duration: 'P1D'
           }
@@ -203,7 +208,7 @@ export function generateStructuredData({
       return {
         ...baseData,
         '@type': 'Article',
-        headline: data?.title || 'Peaks of the Balkans',
+        headline: data?.title || 'Phrygian Way',
         description: data?.description || siteConfig.description[locale],
         image: data?.image || `${siteConfig.url}${siteConfig.images.og}`,
         datePublished: data?.datePublished || new Date().toISOString(),
