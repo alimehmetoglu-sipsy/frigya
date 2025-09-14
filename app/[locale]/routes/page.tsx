@@ -1,11 +1,21 @@
+'use client';
+
+import { useState } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import RoutesHero from '@/components/routes/RoutesHero';
+import RouteSelector, { Route } from '@/components/routes/RouteSelector';
+import InteractiveRouteMap from '@/components/routes/InteractiveRouteMap';
+import RouteDetails from '@/components/routes/RouteDetails';
+import ElevationProfile from '@/components/routes/ElevationProfile';
+import SampleItineraries from '@/components/routes/SampleItineraries';
 import Link from 'next/link';
-import { MapPin, Mountain, Clock, AlertTriangle, ChevronRight, Home, Utensils, Compass, Droplets } from 'lucide-react';
+import { MapPin, Mountain, Clock, AlertTriangle, ChevronRight, Home, Utensils, Compass, Droplets, Download } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 export default function RoutesPage() {
   const t = useTranslations();
+  const [selectedRoute, setSelectedRoute] = useState<Route | undefined>();
 
   const routeStages = [
     { href: '/routes/gordion-beylikopru', title: 'Gordion → Beylikköprü', day: 'Stage 1', distance: '18 km', duration: '5-6 hours', difficulty: 'Easy' },
@@ -43,318 +53,60 @@ export default function RoutesPage() {
     <>
       <Navigation />
 
-      <section className="pt-32 pb-16 bg-white">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">
-            The Complete Phrygian Way Guide
-          </h1>
-          <p className="text-xl text-gray-600 mb-8">Three Starting Points, One Epic Adventure</p>
-          <div className="border-b-2 border-primary-600 w-24"></div>
-        </div>
-      </section>
+      {/* Hero Section */}
+      <RoutesHero />
 
-      <section className="pb-16 bg-white">
-        <div className="container mx-auto px-4 max-w-6xl">
-          {/* Fast Facts Section */}
-          <div className="bg-primary-50 rounded-lg p-8 mb-12">
-            <h2 className="font-display text-2xl font-bold mb-6 text-primary-900">QUICK FACTS</h2>
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 max-w-7xl">
+          {/* Route Selector */}
+          <RouteSelector
+            onRouteSelect={setSelectedRoute}
+            selectedRoute={selectedRoute}
+          />
 
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div>
-                <h3 className="font-bold text-lg mb-4">Main Routes</h3>
-                <div className="space-y-3">
-                  <div className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2"></span>
-                    <div>
-                      <p className="font-semibold">Eastern Route (Gordion)</p>
-                      <p className="text-sm text-gray-600">219 km • 8-10 days • Moderate to Challenging</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2"></span>
-                    <div>
-                      <p className="font-semibold">Southern Route (Seydiler)</p>
-                      <p className="text-sm text-gray-600">140 km • 6-7 days • Moderate</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2"></span>
-                    <div>
-                      <p className="font-semibold">Western Route (Yenice)</p>
-                      <p className="text-sm text-gray-600">147 km • 6-7 days • Moderate</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          {/* Interactive Map */}
+          <InteractiveRouteMap
+            selectedRoute={selectedRoute}
+            onMarkerClick={(marker) => console.log('Marker clicked:', marker)}
+          />
 
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-bold text-lg mb-3">Route Overview</h3>
-                  <p className="text-gray-700 mb-4">
-                    The Phrygian Way spans 506 kilometers across western-central Turkey, following ancient paths used by the Phrygians over 3,000 years ago. This cultural trekking route is marked according to international standards with red and white blazes.
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white rounded-lg p-4">
-                    <div className="flex items-center gap-2 mb-2">
-                      <MapPin className="w-5 h-5 text-primary-600" />
-                      <span className="font-semibold">Total Distance</span>
-                    </div>
-                    <p className="text-2xl font-bold text-primary-600">506 km</p>
-                  </div>
-
-                  <div className="bg-white rounded-lg p-4">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Clock className="w-5 h-5 text-primary-600" />
-                      <span className="font-semibold">Duration</span>
-                    </div>
-                    <p className="text-2xl font-bold text-primary-600">20-30 days</p>
-                  </div>
-                </div>
-              </div>
+          {/* Route Details */}
+          {selectedRoute && (
+            <div className="mt-12">
+              <RouteDetails route={selectedRoute} />
             </div>
+          )}
+
+          {/* Elevation Profile */}
+          {selectedRoute && (
+            <div className="mt-12">
+              <ElevationProfile routeId={selectedRoute.id} />
+            </div>
+          )}
+
+          {/* Sample Itineraries */}
+          <div className="mt-12">
+            <SampleItineraries />
           </div>
-
-          {/* Three Main Routes Detailed */}
-          <div className="mb-12">
-            <h2 className="font-display text-2xl font-bold mb-6">THE THREE MAIN ROUTES</h2>
-
-            {/* Eastern Route */}
-            <div className="bg-gray-50 rounded-lg p-6 mb-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white font-bold">1</div>
-                <div className="flex-1">
-                  <h3 className="font-bold text-xl mb-2">Eastern Route: From Gordion</h3>
-                  <div className="grid md:grid-cols-2 gap-4 mb-4">
-                    <div>
-                      <p className="text-sm text-gray-600 mb-2">
-                        <strong>Distance:</strong> 219 km<br />
-                        <strong>Duration:</strong> 8-10 days<br />
-                        <strong>Difficulty:</strong> Moderate to Challenging<br />
-                        <strong>Start Point:</strong> Yassıhöyük Village, Polatlı
-                      </p>
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-600">
-                        <strong>Coordinates:</strong> 39.6505°N, 31.9931°E<br />
-                        <strong>Elevation Range:</strong> 800-1,500m<br />
-                        <strong>Total Ascent:</strong> ~4,500m
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 mb-4">
-                    Beginning at the UNESCO World Heritage Site of Gordion, this route takes you through the heart of ancient Phrygia. Follow the Porsuk River valley through Sivrihisar before reaching the sacred site of Pessinus. The trail then enters the dramatic Sakarya River valley before ascending into Mountainous Phrygia.
-                  </p>
-                  <div className="bg-white rounded-lg p-4">
-                    <h4 className="font-semibold mb-2">Key Highlights:</h4>
-                    <ul className="grid md:grid-cols-2 gap-2 text-sm text-gray-700">
-                      <li>• Gordion ancient capital & museum</li>
-                      <li>• Midas Tumulus</li>
-                      <li>• Sivrihisar historic center</li>
-                      <li>• Temple of Cybele at Pessinus</li>
-                      <li>• Byzantine church remains</li>
-                      <li>• Yazılıkaya (Midas Monument)</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Southern Route */}
-            <div className="bg-gray-50 rounded-lg p-6 mb-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">2</div>
-                <div className="flex-1">
-                  <h3 className="font-bold text-xl mb-2">Southern Route: From Seydiler</h3>
-                  <div className="grid md:grid-cols-2 gap-4 mb-4">
-                    <div>
-                      <p className="text-sm text-gray-600 mb-2">
-                        <strong>Distance:</strong> 140 km<br />
-                        <strong>Duration:</strong> 6-7 days<br />
-                        <strong>Difficulty:</strong> Moderate<br />
-                        <strong>Start Point:</strong> Seydiler Town, Afyonkarahisar
-                      </p>
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-600">
-                        <strong>Coordinates:</strong> 38.5765°N, 30.5459°E<br />
-                        <strong>Elevation Range:</strong> 900-1,400m<br />
-                        <strong>Total Ascent:</strong> ~2,800m
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 mb-4">
-                    The most accessible route, perfect for beginners. Features dramatic fairy chimneys similar to Cappadocia, Byzantine rock churches, and passes through the scenic Göynüş Valley. This route offers the best village accommodation options.
-                  </p>
-                  <div className="bg-white rounded-lg p-4">
-                    <h4 className="font-semibold mb-2">Key Highlights:</h4>
-                    <ul className="grid md:grid-cols-2 gap-2 text-sm text-gray-700">
-                      <li>• Seydiler fairy chimneys</li>
-                      <li>• Ayazini rock church (UNESCO tentative)</li>
-                      <li>• Göynüş Valley & Aslantaş monument</li>
-                      <li>• Byzantine rock settlements</li>
-                      <li>• Traditional pottery workshops</li>
-                      <li>• Natural thermal springs</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Western Route */}
-            <div className="bg-gray-50 rounded-lg p-6 mb-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">3</div>
-                <div className="flex-1">
-                  <h3 className="font-bold text-xl mb-2">Western Route: From Yenice Farm</h3>
-                  <div className="grid md:grid-cols-2 gap-4 mb-4">
-                    <div>
-                      <p className="text-sm text-gray-600 mb-2">
-                        <strong>Distance:</strong> 147 km<br />
-                        <strong>Duration:</strong> 6-7 days<br />
-                        <strong>Difficulty:</strong> Moderate<br />
-                        <strong>Start Point:</strong> Yenice Çiftliği, Kütahya
-                      </p>
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-600">
-                        <strong>Coordinates:</strong> 39.4417°N, 29.9751°E<br />
-                        <strong>Elevation Range:</strong> 850-1,450m<br />
-                        <strong>Total Ascent:</strong> ~3,200m
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 mb-4">
-                    The most scenic route, passing through pristine valleys and ancient Phrygian roads still visible in the rock. Features the spectacular Zahran Valley and numerous archaeological sites.
-                  </p>
-                  <div className="bg-white rounded-lg p-4">
-                    <h4 className="font-semibold mb-2">Key Highlights:</h4>
-                    <ul className="grid md:grid-cols-2 gap-2 text-sm text-gray-700">
-                      <li>• Zahran Valley (most beautiful section)</li>
-                      <li>• Ancient rock-cut Phrygian roads</li>
-                      <li>• Sökmen Plateau panoramas</li>
-                      <li>• İncik cave systems</li>
-                      <li>• Traditional village life</li>
-                      <li>• Archaeological remains</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Technical Details */}
-          <div className="bg-gray-50 rounded-lg p-8 mb-12">
-            <h3 className="font-display text-2xl font-bold mb-6">Technical Information</h3>
-
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-white rounded-lg p-6">
-                <Mountain className="w-8 h-8 text-primary-600 mb-3" />
-                <h4 className="font-semibold mb-2">Elevation</h4>
-                <p className="text-sm text-gray-600 mb-1">Min: 800 meters</p>
-                <p className="text-sm text-gray-600">Max: 1,500 meters</p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6">
-                <div className="w-8 h-8 text-primary-600 mb-3">↗</div>
-                <h4 className="font-semibold mb-2">Total Ascent</h4>
-                <p className="text-2xl font-bold text-primary-600">~8,500 m</p>
-              </div>
-
-              <div className="bg-white rounded-lg p-6">
-                <div className="w-8 h-8 text-primary-600 mb-3">↘</div>
-                <h4 className="font-semibold mb-2">Total Descent</h4>
-                <p className="text-2xl font-bold text-primary-600">~8,300 m</p>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-semibold mb-3">Trail Marking System</h4>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li><span className="font-semibold text-red-600">Red & White Stripes:</span> Main trail markers</li>
-                  <li><span className="font-semibold text-yellow-600">Yellow Arrows:</span> Alternative routes</li>
-                  <li><span className="font-semibold text-blue-600">Blue Markers:</span> Water sources</li>
-                  <li><span className="font-semibold text-green-600">Green Signs:</span> Points of interest</li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-3">Infrastructure</h4>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li>• 109 directional poles</li>
-                  <li>• 217 trail signs</li>
-                  <li>• 73 information boards</li>
-                  <li>• GPS waypoints marked</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Difficulty Levels */}
-          <div className="mb-12">
-            <h3 className="font-display text-2xl font-bold mb-6">Difficulty Levels</h3>
+          {/* GPS Downloads Section */}
+          <div className="mt-12 bg-primary-50 rounded-xl p-8">
+            <h3 className="text-2xl font-bold mb-6">GPS Navigation & Downloads</h3>
             <p className="text-gray-700 mb-6">
-              The Phrygian Way difficulty varies from easy to challenging throughout the trail.
+              Download complete GPS tracks for offline navigation. Compatible with all major GPS devices and smartphone apps.
             </p>
-
-            <div className="space-y-4">
-              {difficultyLevels.map((level, index) => (
-                <div key={index} className={`${level.bgColor} rounded-lg p-6`}>
-                  <h4 className={`font-bold text-lg mb-2 ${level.color}`}>
-                    {level.level}
-                  </h4>
-                  <p className="text-gray-700">{level.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Route Stages - Detailed */}
-          <div>
-            <h3 className="font-display text-2xl font-bold mb-6">Sample Itinerary: Eastern Route Stages</h3>
-            <p className="text-gray-700 mb-6">
-              Below are the main stages of the Eastern Route from Gordion to Yazılıkaya and continuing to Seydiler.
-            </p>
-            <div className="space-y-4">
-              {routeStages.map((stage, index) => (
-                <Link
-                  key={stage.href}
-                  href={stage.href}
-                  className="block bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-all duration-300 group"
-                >
-                  <div className="flex items-center justify-between">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-4 mb-2">
-                        <span className="text-sm font-medium text-primary-600 bg-primary-50 px-3 py-1 rounded-full">
-                          {stage.day}
-                        </span>
-                        <span className={`text-sm font-medium px-3 py-1 rounded-full ${
-                          stage.difficulty === 'Easy' ? 'bg-green-50 text-green-600' :
-                          stage.difficulty === 'Moderate' ? 'bg-yellow-50 text-yellow-600' :
-                          'bg-red-50 text-red-600'
-                        }`}>
-                          {stage.difficulty}
-                        </span>
-                      </div>
-                      <h4 className="font-display text-xl font-bold mb-2 group-hover:text-primary-600 transition-colors">
-                        {stage.title}
-                      </h4>
-                      <div className="flex items-center gap-6 text-sm text-gray-600">
-                        <span className="flex items-center gap-1">
-                          <MapPin className="w-4 h-4" />
-                          {stage.distance}
-                        </span>
-                        <span className="flex items-center gap-1">
-                          <Clock className="w-4 h-4" />
-                          {stage.duration}
-                        </span>
-                      </div>
-                    </div>
-                    <ChevronRight className="w-6 h-6 text-gray-400 group-hover:text-primary-600 transition-colors" />
-                  </div>
-                </Link>
-              ))}
+            <div className="grid md:grid-cols-3 gap-4">
+              <button className="bg-white border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg hover:bg-primary-50 transition-colors flex items-center justify-center gap-2">
+                <Download className="w-5 h-5" />
+                Eastern Route GPX
+              </button>
+              <button className="bg-white border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg hover:bg-primary-50 transition-colors flex items-center justify-center gap-2">
+                <Download className="w-5 h-5" />
+                Southern Route GPX
+              </button>
+              <button className="bg-white border-2 border-primary-600 text-primary-600 px-6 py-3 rounded-lg hover:bg-primary-50 transition-colors flex items-center justify-center gap-2">
+                <Download className="w-5 h-5" />
+                Western Route GPX
+              </button>
             </div>
           </div>
 
