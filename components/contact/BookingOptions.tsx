@@ -213,6 +213,7 @@ export default function BookingOptions() {
                   max="20"
                   value={groupSize}
                   onChange={(e) => setGroupSize(parseInt(e.target.value))}
+                  onInput={(e) => setGroupSize(parseInt((e.target as HTMLInputElement).value))}
                   className="w-full"
                 />
                 <div className="flex justify-between text-sm text-gray-600 mt-2">
