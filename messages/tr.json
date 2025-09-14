@@ -455,5 +455,63 @@
       "title": "Pazarlama Çerezleri",
       "description": "Size ilgili içerik ve reklamlar göstermek için kullanılır."
     }
+  },
+  "about": {
+    "meta": {
+      "title": "Hakkımızda - Frigya Yolu | Antik İz Tarihi & Ekip | Türkiye Doğa Yürüyüşü",
+      "description": "Türkiye'nin Frigya Yolu'nun tarihini keşfedin, uzman ekibimizle tanışın, koruma çalışmalarımızı öğrenin ve antik mirası koruyan uluslararası ortaklıklarımızı görün."
+    },
+    "hero": {
+      "title": "Frigya Yolu Hakkında",
+      "subtitle": "Sürdürülebilir turizm ve toplumsal katılım yoluyla antik mirası korumak"
+    },
+    "history": {
+      "title": "Zamanda Yolculuk",
+      "subtitle": "Antik Frigya'dan modern konservasyon çalışmalarına - 506 km'lik kültürel patikamızın zengin tarihini keşfedin",
+      "archaeological": {
+        "title": "Arkeolojik Keşifler",
+        "description": "Son on yılda, patikamız daha önce bilinmeyen Frig yerleşimleri ve imparatorluğu birbirine bağlayan antik yol ağları dahil çok sayıda arkeolojik keşif sağladı."
+      }
+    },
+    "team": {
+      "title": "Ekibimizle Tanışın",
+      "subtitle": "Frig mirasını korumaya ve dünyanın her yerinden gezginler için unutulmaz deneyimler yaratmaya adanmış tutkulu uzmanlar",
+      "cta": {
+        "title": "Misyonumuza Katılın",
+        "description": "Rehberler, araştırmacılar ve korumacılardan oluşan ekibimize katılacak tutkulu bireyler arıyoruz.",
+        "button": "Fırsatları Görüntüle"
+      }
+    },
+    "conservation": {
+      "title": "Koruma & Sürdürülebilirlik",
+      "subtitle": "Sorumlu turizm girişimleri aracılığıyla yerel toplulukları desteklerken antik mirası koruyor",
+      "impact": {
+        "title": "Koruma Etkimiz",
+        "subtitle": "Sürdürülebilirlik ve miras koruma çalışmalarımızdan ölçülebilir sonuçlar"
+      },
+      "volunteer": {
+        "title": "Gönüllülük Fırsatları",
+        "subtitle": "Koruma çalışmalarımıza katılın ve kültürel miras korumasında kalıcı bir etki yaratın"
+      },
+      "donation": {
+        "title": "Misyonumuzu Destekleyin",
+        "description": "Katkınız patikayı sürdürmemize, yerel toplulukları desteklememize ve gelecek nesiller için antik Frig mirasını korunmamıza yardımcı oluyor.",
+        "donate": "Bağış Yapın",
+        "volunteer": "Gönüllü Olun"
+      }
+    },
+    "partners": {
+      "title": "Ortaklarımız & İş Birlikçilerimiz",
+      "subtitle": "Frigya Yolu'nu korumak ve tanıtmak için uluslararası kuruluşlar, devlet kurumları ve yerel topluluklar ile birlikte çalışıyoruz",
+      "partnership": {
+        "title": "Ortaklık Fırsatları",
+        "subtitle": "Kültürel mirasın korunması ve sürdürülebilir turizmin geliştirilmesi için bize katılın"
+      },
+      "cta": {
+        "title": "Ortak Olun",
+        "description": "Antik Frigya Yolu boyunca kültürel miras koruması, sürdürülebilir turizm geliştirme ve toplumsal güçlendirme desteklemek için bizimle ortaklık kurun.",
+        "button": "Ortaklık Başvurusu"
+      }
+    }
   }
 }

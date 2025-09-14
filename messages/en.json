@@ -620,5 +620,63 @@
       "title": "Marketing Cookies",
       "description": "Used to show you relevant content and advertisements."
     }
+  },
+  "about": {
+    "meta": {
+      "title": "About the Phrygian Way | Ancient Trail History & Team | Turkey Hiking",
+      "description": "Discover the history of Turkey's Phrygian Way trail, meet our expert team, learn about conservation efforts, and our international partnerships preserving ancient heritage."
+    },
+    "hero": {
+      "title": "About the Phrygian Way",
+      "subtitle": "Preserving ancient heritage through sustainable tourism and community engagement"
+    },
+    "history": {
+      "title": "Journey Through Time",
+      "subtitle": "From ancient Phrygia to modern conservation - explore the rich history of our 506km cultural trail",
+      "archaeological": {
+        "title": "Archaeological Discoveries",
+        "description": "Over the past decade, our trail has led to numerous archaeological discoveries, including previously unknown Phrygian settlements and ancient road networks that connected the empire."
+      }
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "subtitle": "Passionate experts dedicated to preserving Phrygian heritage and creating unforgettable experiences for travelers from around the world",
+      "cta": {
+        "title": "Join Our Mission",
+        "description": "We're always looking for passionate individuals to join our team of guides, researchers, and conservationists.",
+        "button": "View Opportunities"
+      }
+    },
+    "conservation": {
+      "title": "Conservation & Sustainability",
+      "subtitle": "Protecting ancient heritage while supporting local communities through responsible tourism initiatives",
+      "impact": {
+        "title": "Our Conservation Impact",
+        "subtitle": "Measurable results from our sustainability and heritage preservation efforts"
+      },
+      "volunteer": {
+        "title": "Volunteer Opportunities",
+        "subtitle": "Join our conservation efforts and make a lasting impact on cultural heritage preservation"
+      },
+      "donation": {
+        "title": "Support Our Mission",
+        "description": "Your contribution helps us maintain the trail, support local communities, and preserve ancient Phrygian heritage for future generations.",
+        "donate": "Make a Donation",
+        "volunteer": "Become a Volunteer"
+      }
+    },
+    "partners": {
+      "title": "Our Partners & Collaborators",
+      "subtitle": "Working together with international organizations, government agencies, and local communities to preserve and promote the Phrygian Way",
+      "partnership": {
+        "title": "Partnership Opportunities",
+        "subtitle": "Join us in preserving cultural heritage and promoting sustainable tourism"
+      },
+      "cta": {
+        "title": "Become a Partner",
+        "description": "Partner with us to support cultural heritage preservation, sustainable tourism development, and community empowerment along the ancient Phrygian Way.",
+        "button": "Partnership Inquiry"
+      }
+    }
   }
 }
