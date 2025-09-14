@@ -172,7 +172,7 @@ export default function MapBackground({ className = '', interactive = false }: M
           mapLoaded ? 'opacity-0' : 'opacity-100'
         }`}
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
+          backgroundImage: `url('https://artofwayfaring.com/app/uploads/2020/10/Eski%C5%9Fehir-Seyitgazi-Yaz%C4%B1l%C4%B1kaya-02648.jpg')`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
