@@ -21,13 +21,13 @@
   .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .btn-primary {
-    @apply bg-primary-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-600 transition-colors duration-200 inline-flex items-center space-x-2;
+    @apply relative bg-primary-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-600 transition-all duration-300 inline-flex items-center justify-center gap-2 overflow-hidden transform hover:scale-105;
   }
-  
+
   .btn-secondary {
-    @apply bg-white text-primary-600 px-6 py-3 rounded-lg font-medium hover:bg-primary-50 transition-colors duration-200 inline-flex items-center space-x-2 border border-primary-200;
+    @apply bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-lg font-medium hover:bg-white/20 transition-all duration-300 inline-flex items-center justify-center gap-2 border border-white/20;
   }
   
   .section-padding {
@@ -43,17 +43,51 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-primary-600;
   }
-  
+
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
-  
+
   @keyframes float {
     0%, 100% {
       transform: translateY(0px);
     }
     50% {
       transform: translateY(-20px);
+    }
+  }
+
+  /* Responsive Typography */
+  @screen sm {
+    .responsive-hero-title {
+      @apply text-5xl;
+    }
+    .responsive-hero-subtitle {
+      @apply text-xl;
+    }
+  }
+
+  @screen md {
+    .responsive-hero-title {
+      @apply text-6xl;
+    }
+    .responsive-hero-subtitle {
+      @apply text-2xl;
+    }
+  }
+
+  @screen lg {
+    .responsive-hero-title {
+      @apply text-7xl;
+    }
+    .responsive-hero-subtitle {
+      @apply text-3xl;
+    }
+  }
+
+  @screen xl {
+    .responsive-hero-title {
+      @apply text-8xl;
     }
   }
 }

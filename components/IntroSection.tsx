@@ -23,10 +23,10 @@ export default function IntroSection({ data }: IntroSectionProps) {
   };
 
   const features = [
-    { icon: MapPin, label: '192 km Rota', value: '192 km' },
-    { icon: Mountain, label: '3 Ülke', value: '3' },
-    { icon: Calendar, label: '10-13 Gün', value: '10-13' },
-    { icon: TrendingUp, label: '2300m Yükseklik', value: '2300m' },
+    { icon: MapPin, label: 'Total Distance', value: '506 km' },
+    { icon: Mountain, label: 'Provinces', value: '4' },
+    { icon: Calendar, label: 'Duration', value: '20-30 days' },
+    { icon: TrendingUp, label: 'Max Altitude', value: '1500m' },
   ];
 
   return (

@@ -1,0 +1,426 @@
+{
+  "meta": {
+    "title": "Phrygian Way | 506km Ancient Trail Through Turkey | Official Site",
+    "description": "Discover the Phrygian Way, Turkey's spectacular 506km hiking trail through ancient Phrygia. Walk through 3000 years of history from Gordion to Yazılıkaya. UNESCO sites, fairy chimneys, and authentic villages await.",
+    "keywords": "phrygian way, frigya yolu, turkey hiking trail, gordion, midas monument, yazılıkaya, ancient hiking trails, turkey trekking, cultural routes turkey"
+  },
+  "nav": {
+    "home": "Home",
+    "routes": "Routes",
+    "gallery": "Gallery",
+    "travelTips": "Travel Tips",
+    "about": "About",
+    "contact": "Contact",
+    "register": "Register",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Walk Through 3000 Years of History",
+    "subtitle": "Discover the Ancient Phrygian Way",
+    "description": "Turkey's Most Spectacular 506km Trail",
+    "cta": {
+      "primary": "Start Your Journey",
+      "secondary": "Explore Routes"
+    }
+  },
+  "features": {
+    "title": "Experience the Journey",
+    "items": {
+      "culture": {
+        "title": "Cultural Heritage",
+        "description": "Explore UNESCO World Heritage sites and ancient Phrygian monuments"
+      },
+      "nature": {
+        "title": "Natural Beauty",
+        "description": "Trek through diverse landscapes from mountains to valleys"
+      },
+      "villages": {
+        "title": "Authentic Villages",
+        "description": "Experience traditional Turkish hospitality in historic villages"
+      },
+      "history": {
+        "title": "Living History",
+        "description": "Walk the paths of ancient civilizations and trade routes"
+      }
+    }
+  },
+  "routes": {
+    "title": "Choose Your Path",
+    "subtitle": "Three main routes through ancient Phrygia",
+    "viewDetails": "View Details",
+    "distance": "Distance",
+    "difficulty": "Difficulty",
+    "duration": "Duration",
+    "days": "days",
+    "stages": "Stages",
+    "elevation": "Elevation",
+    "mainPage": {
+      "title": "The Complete Phrygian Way Guide",
+      "subtitle": "Three Starting Points, One Epic Adventure",
+      "description": "The Phrygian Way spans 506 kilometers across western-central Turkey, following ancient paths used by the Phrygians over 3,000 years ago."
+    },
+    "gordion": {
+      "title": "Eastern Route (Gordion)",
+      "description": "The longest and most historically rich path, starting from the ancient capital.",
+      "difficulty": "Moderate to Challenging",
+      "distance": "219 km",
+      "duration": "8-10 days",
+      "highlights": [
+        "UNESCO World Heritage Site of Gordion",
+        "Midas Tumulus",
+        "Temple of Cybele at Pessinus",
+        "Dramatic Sakarya River valley"
+      ]
+    },
+    "seydiler": {
+      "title": "Southern Route (Seydiler)",
+      "description": "Perfect for beginners, featuring fairy chimneys and thermal springs.",
+      "difficulty": "Moderate",
+      "distance": "140 km",
+      "duration": "6-7 days",
+      "highlights": [
+        "Fairy chimneys similar to Cappadocia",
+        "Byzantine rock churches at Ayazini",
+        "Natural thermal springs",
+        "Best village accommodation options"
+      ]
+    },
+    "yenice": {
+      "title": "Western Route (Yenice)",
+      "description": "The most scenic route through valleys and ancient roads.",
+      "difficulty": "Moderate",
+      "distance": "147 km",
+      "duration": "6-7 days",
+      "highlights": [
+        "Spectacular Zahran Valley",
+        "Ancient Phrygian rock-cut roads",
+        "Pristine mountain landscapes",
+        "Traditional ceramic workshops"
+      ]
+    },
+    "stages": {
+      "stage1": {
+        "title": "Gordion to Beylikköprü",
+        "distance": "18 km",
+        "duration": "5-6 hours",
+        "difficulty": "Easy",
+        "elevation": "150m gain",
+        "description": "Starting from the ancient capital of Gordion, follow the Sakarya River valley through agricultural lands."
+      },
+      "stage2": {
+        "title": "Beylikköprü to Mülk",
+        "distance": "34 km",
+        "duration": "8-9 hours",
+        "difficulty": "Moderate",
+        "elevation": "320m gain",
+        "description": "Longer stage through rolling hills and farmland with ancient road sections visible in places."
+      },
+      "stage3": {
+        "title": "Mülk to Sivrihisar",
+        "distance": "26 km",
+        "duration": "6-7 hours",
+        "difficulty": "Moderate",
+        "elevation": "200m gain",
+        "description": "Approach the historic town of Sivrihisar with its distinctive skyline and Ottoman architecture."
+      },
+      "stage4": {
+        "title": "Sivrihisar to Pessinus",
+        "distance": "32 km",
+        "duration": "7-8 hours",
+        "difficulty": "Moderate",
+        "elevation": "280m gain",
+        "description": "Journey to ancient Pessinus, one of Phrygia's most important religious centers."
+      },
+      "stage5": {
+        "title": "Ballıhisar to Yazılıkaya",
+        "distance": "35 km",
+        "duration": "8-9 hours",
+        "difficulty": "Challenging",
+        "elevation": "450m gain",
+        "description": "The climactic approach to Yazılıkaya, ascending to the plateau where the Midas Monument stands."
+      },
+      "stage6": {
+        "title": "Yazılıkaya to Döğer",
+        "distance": "35 km",
+        "duration": "7-8 hours",
+        "difficulty": "Moderate",
+        "elevation": "-200m descent",
+        "description": "Descending from Yazılıkaya plateau through scenic valleys toward Döğer town."
+      },
+      "stage7": {
+        "title": "Döğer to Ayazini",
+        "distance": "30 km",
+        "duration": "7 hours",
+        "difficulty": "Moderate",
+        "elevation": "150m gain",
+        "description": "Through the heart of the Phrygian valleys to spectacular Ayazini with its rock church."
+      },
+      "stage8": {
+        "title": "Ayazini to Seydiler",
+        "distance": "35 km",
+        "duration": "8 hours",
+        "difficulty": "Moderate",
+        "elevation": "-150m descent",
+        "description": "Final stage to Seydiler, passing through landscapes reminiscent of Cappadocia."
+      }
+    }
+  },
+  "gallery": {
+    "title": "Visual Journey Through Time",
+    "categories": {
+      "monuments": "Ancient Monuments",
+      "nature": "Natural Wonders",
+      "village": "Village Life",
+      "trail": "Trail Experiences"
+    },
+    "viewAll": "View All Photos",
+    "loading": "Loading images..."
+  },
+  "travelTips": {
+    "title": "Essential Travel Guide",
+    "subtitle": "Everything you need for your Phrygian Way adventure",
+    "categories": {
+      "equipment": {
+        "title": "Essential Equipment",
+        "description": "Complete packing list for your journey"
+      },
+      "weather": {
+        "title": "Weather & Seasons",
+        "description": "Best times to hike and what to expect"
+      },
+      "safety": {
+        "title": "Safety Guidelines",
+        "description": "Important safety information and emergency contacts"
+      },
+      "culture": {
+        "title": "Cultural Etiquette",
+        "description": "Respect local customs and traditions"
+      },
+      "accommodation": {
+        "title": "Accommodation",
+        "description": "Where to stay along the trail"
+      },
+      "food": {
+        "title": "Food & Water",
+        "description": "Nutrition and hydration on the trail"
+      }
+    }
+  },
+  "registration": {
+    "title": "Phrygian Way Registration Form",
+    "subtitle": "Register to join the historic Phrygian Way hiking experience",
+    "errors": {
+      "routeRequired": "Route selection is required",
+      "timeframeRequired": "Time selection is required",
+      "groupTypeRequired": "Group type selection is required",
+      "firstNameMin": "First name must be at least 2 characters",
+      "lastNameMin": "Last name must be at least 2 characters",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneInvalid": "Please enter a valid phone number",
+      "ageRange": "Age must be between 18-75",
+      "fitnessRequired": "Fitness level selection is required",
+      "experienceRequired": "Experience level selection is required",
+      "motivationMin": "Motivation must be at least {min} words (currently {current} words)",
+      "goalsRequired": "Please select at least one goal",
+      "fieldRequired": "This field is required",
+      "termsRequired": "You must accept the terms and conditions",
+      "dataProcessingRequired": "Data processing consent is required",
+      "general": "An error occurred",
+      "connection": "Connection error. Please try again."
+    },
+    "success": {
+      "message": "🎉 Your registration has been successfully received! Thank you.",
+      "redirecting": "Redirecting..."
+    },
+    "social": {
+      "currentUsers": "people are currently filling out this form"
+    },
+    "form": {
+      "personalInfo": "Personal Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "country": "Country of Residence",
+      "dateOfBirth": "Date of Birth",
+      "emergencyContact": "Emergency Contact",
+      "trekPreferences": "Trek Preferences",
+      "preferredRoute": "Preferred Route",
+      "startDate": "Start Date",
+      "duration": "Duration (days)",
+      "groupSize": "Group Size",
+      "accommodationType": "Accommodation Type",
+      "experienceLevel": "Experience Level",
+      "fitnessLevel": "Fitness Level (1-10)",
+      "previousTrails": "Previous Long-Distance Trails",
+      "specialRequirements": "Special Requirements/Medical Conditions",
+      "additionalServices": "Additional Services",
+      "airportTransfer": "Airport Transfer",
+      "equipmentRental": "Equipment Rental",
+      "luggageTransfer": "Luggage Transfer",
+      "photographyPackage": "Photography Package",
+      "culturalExperiences": "Cultural Experiences",
+      "howDidYouHear": "How did you hear about us?",
+      "submit": "Register Now",
+      "submitting": "Submitting..."
+    },
+    "options": {
+      "routes": {
+        "gordion": "Eastern Route (Gordion)",
+        "seydiler": "Southern Route (Seydiler)",
+        "yenice": "Western Route (Yenice)",
+        "full": "Full Trail (All Routes)"
+      },
+      "accommodation": {
+        "camping": "Camping",
+        "guesthouse": "Guesthouse",
+        "mixed": "Mixed"
+      },
+      "experience": {
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced",
+        "expert": "Expert"
+      }
+    },
+    "packages": {
+      "title": "Tour Packages Available",
+      "full": {
+        "name": "Full Trail (25 days)",
+        "description": "Complete 506km experience"
+      },
+      "eastern": {
+        "name": "Eastern Route (10 days)",
+        "description": "Gordion to Yazılıkaya"
+      },
+      "southern": {
+        "name": "Southern Route (7 days)",
+        "description": "Seydiler circuit"
+      },
+      "western": {
+        "name": "Western Route (7 days)",
+        "description": "Yenice to Yazılıkaya"
+      },
+      "weekend": {
+        "name": "Weekend Taster (3 days)",
+        "description": "Yazılıkaya highlights"
+      }
+    },
+    "included": {
+      "title": "What's Included",
+      "items": [
+        "Professional guide",
+        "Accommodation bookings",
+        "Luggage transfer",
+        "Maps and GPS tracks",
+        "Welcome and farewell dinners",
+        "Certificate of completion"
+      ]
+    },
+    "pricing": {
+      "title": "Prices",
+      "selfGuided": "Self-guided from €25/day",
+      "guided": "Guided groups from €65/day",
+      "private": "Private tours from €150/day"
+    }
+  },
+  "footer": {
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About the Trail",
+      "maps": "Route Maps",
+      "gallery": "Photo Gallery",
+      "tips": "Travel Tips",
+      "faq": "FAQs",
+      "blog": "Blog",
+      "contact": "Contact Us"
+    },
+    "resources": {
+      "title": "Resources",
+      "gpx": "Download GPX Files",
+      "guide": "Trail Guidebook (PDF)",
+      "packing": "Packing List",
+      "weather": "Weather Forecast",
+      "currency": "Currency Converter",
+      "phrases": "Turkish Phrases"
+    },
+    "connect": {
+      "title": "Connect",
+      "instagram": "@phrygianway",
+      "facebook": "/phrygianwayturkey",
+      "youtube": "Phrygian Way Official",
+      "email": "info@phrygianway.com",
+      "whatsapp": "WhatsApp Support"
+    },
+    "partners": {
+      "title": "Partners",
+      "tourism": "Turkish Tourism Board",
+      "unesco": "UNESCO World Heritage",
+      "era": "European Ramblers Association",
+      "local": "Local Tourism Offices"
+    },
+    "legal": {
+      "title": "Legal",
+      "terms": "Terms & Conditions",
+      "privacy": "Privacy Policy",
+      "cancellation": "Cancellation Policy",
+      "insurance": "Travel Insurance",
+      "disclaimer": "Disclaimer"
+    },
+    "copyright": "© 2025 Phrygian Way. All rights reserved."
+  },
+  "award": {
+    "badge": "European Excellence Award",
+    "title": "European Excellence Award Winner 2018",
+    "description": "The Phrygian Way has been recognized as one of Europe's premier cultural and hiking routes, receiving the prestigious European Excellence Award for Outstanding Trail Development, Cultural Heritage Preservation, and Sustainable Tourism.",
+    "certificates": {
+      "excellence": {
+        "title": "European Excellence Award",
+        "subtitle": "Outstanding cultural trail with exceptional historical preservation"
+      },
+      "heritage": {
+        "title": "UNESCO World Heritage",
+        "subtitle": "Gordion archaeological site officially recognized"
+      },
+      "sustainable": {
+        "title": "Sustainable Tourism Award",
+        "subtitle": "Community-based tourism development model"
+      }
+    },
+    "comparison": {
+      "title": "Among Europe's Greatest Trails"
+    },
+    "details": [
+      "Only Turkish trail to receive European Excellence recognition for cultural heritage preservation",
+      "Featured alongside Camino de Santiago and Via Francigena as one of Europe's top cultural routes",
+      "Recognized for exceptional community engagement and sustainable tourism development",
+      "International trail marking standards with GPS coordinates and comprehensive waypoint system"
+    ]
+  },
+  "common": {
+    "readMore": "Read More",
+    "viewDetails": "View Details",
+    "learnMore": "Learn More",
+    "bookNow": "Book Now",
+    "contactUs": "Contact Us",
+    "downloadPDF": "Download PDF",
+    "share": "Share",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success!",
+    "km": "km",
+    "hours": "hours",
+    "days": "days",
+    "meters": "meters",
+    "difficulty": {
+      "easy": "Easy",
+      "moderate": "Moderate",
+      "challenging": "Challenging",
+      "expert": "Expert"
+    }
+  }
+}

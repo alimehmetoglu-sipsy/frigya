@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslations, useLocale } from 'next-intl';
+import LanguageSwitcher from './LanguageSwitcher';
 
 interface NavItem {
   href: string;
@@ -19,6 +21,8 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const t = useTranslations('nav');
+  const locale = useLocale();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,35 +33,22 @@ export default function Navigation() {
   }, []);
 
   // Alt sayfalar için navigation her zaman beyaz background kullanmalı
-  const isSubPage = pathname.includes('/rotada') || 
-    pathname.includes('/rota-aciklamasi') || 
-    pathname.includes('/seyahat-tavsiyeleri') || 
-    pathname.includes('/tavsiyeler') ||
-    pathname.includes('/album');
-  
+  const isSubPage = pathname.includes('/routes') ||
+    pathname.includes('/gallery') ||
+    pathname.includes('/travel-tips') ||
+    pathname.includes('/about') ||
+    pathname.includes('/contact') ||
+    pathname.includes('/register');
+
   const shouldUseLightBackground = isScrolled || isSubPage;
 
   const navItems: NavItem[] = [
-    { href: '/', label: 'Ana Sayfa' },
-    { href: '/rota-aciklamasi', label: 'Rota Açıklaması' },
-    { 
-      href: '/rotada', 
-      label: 'Rotada',
-      subItems: [
-        { href: '/rotada/theth-valbone', label: 'Theth - Valbonë' },
-        { href: '/rotada/valbone-cerem', label: 'Valbonë - Çerem' },
-        { href: '/rotada/cerem-doberdol', label: 'Çerem - Dobërdol' },
-        { href: '/rotada/doberdol-milishevc', label: 'Dobërdol - Milishevc' },
-        { href: '/rotada/milishevc-reka-allages', label: 'Milishevc - Reka e Allagës' },
-        { href: '/rotada/reka-allages-kucishte', label: 'Reka e Allagës - Kuçishtë' },
-        { href: '/rotada/kucishte-babino-polje', label: 'Kuçishtë - Babino Polje' },
-        { href: '/rotada/babino-polje-plav', label: 'Babino Polje - Plav (Hrid Gölü)' },
-        { href: '/rotada/plav-vusanje', label: 'Plav - Vusanje (Gri Ada)' },
-        { href: '/rotada/vusanje-theth', label: 'Vusanje - Theth' },
-      ]
-    },
-    { href: '/seyahat-tavsiyeleri', label: 'Seyahat Tavsiyeleri' },
-    { href: '/album', label: 'Albüm' },
+    { href: `/${locale}`, label: t('home') },
+    { href: `/${locale}/routes`, label: t('routes') },
+    { href: `/${locale}/gallery`, label: t('gallery') },
+    { href: `/${locale}/travel-tips`, label: t('travelTips') },
+    { href: `/${locale}/register`, label: t('register') },
+    { href: `/${locale}/contact`, label: t('contact') },
   ];
 
   return (
@@ -68,12 +59,12 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">BZ</span>
+              <span className="text-white font-bold text-xl">PW</span>
             </div>
             <span className={`font-display font-bold text-xl ${
               shouldUseLightBackground ? 'text-gray-900' : 'text-white'
             }`}>
-              Balkanların Zirveleri
+              Phrygian Way
             </span>
           </Link>
 
@@ -105,6 +96,7 @@ export default function Navigation() {
                 )}
               </div>
             ))}
+            <LanguageSwitcher />
           </div>
 
           <button
@@ -157,6 +149,9 @@ export default function Navigation() {
                   )}
                 </motion.div>
               ))}
+              <div className="mt-4 pt-4 border-t">
+                <LanguageSwitcher />
+              </div>
             </div>
           </motion.div>
         )}

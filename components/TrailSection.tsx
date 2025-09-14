@@ -3,14 +3,27 @@
 import { motion } from 'framer-motion';
 import { Check, Map, Calendar, Mountain, Compass } from 'lucide-react';
 
-export default function TrailSection() {
+interface TrailSectionProps {
+  data?: {
+    subtitle?: string;
+    description?: string;
+    stats?: {
+      distance: string;
+      duration: string;
+      villages: string;
+      maxAltitude: string;
+    };
+  };
+}
+
+export default function TrailSection({ data }: TrailSectionProps) {
   const highlights = [
-    'Kristal berraklığında dağ gölleri',
-    'Muhteşem şelaleler ve nehirler',
-    'Geleneksel dağ köyleri',
-    'Zengin flora ve fauna',
-    'Otantik kültürel deneyimler',
-    'İşaretlenmiş ve güvenli rotalar'
+    'UNESCO World Heritage Site at Gordion',
+    '17-meter tall Midas Monument',
+    'Byzantine rock churches and settlements',
+    'Traditional Turkish villages',
+    'Natural thermal springs',
+    'Well-marked and safe trails'
   ];
 
   return (
@@ -24,15 +37,15 @@ export default function TrailSection() {
             viewport={{ once: true }}
           >
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-              Rota Detayları
+              Route Details
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Çoban yolları ve patikalar kullanılarak oluşturulan rota, deniz seviyesinden 2300 metre yüksekliğe kadar çıkan yüksek alpin dağlardan geçiyor.
+              {data?.description || 'The Phrygian Way consists of three main routes that converge at the sacred site of Yazılıkaya. The trail is marked according to international standards with red and white blazes, featuring 109 directional poles and 217 signs.'}
             </p>
 
             <div className="space-y-4 mb-8">
               <h3 className="font-semibold text-xl text-gray-900 mb-4">
-                Öne Çıkanlar
+                Trail Highlights
               </h3>
               <ul className="space-y-3">
                 {highlights.map((item, index) => (
@@ -53,10 +66,10 @@ export default function TrailSection() {
 
             <div className="bg-primary-50 rounded-xl p-6">
               <h3 className="font-semibold text-xl text-gray-900 mb-3">
-                En İyi Zaman
+                Best Time to Visit
               </h3>
               <p className="text-gray-600">
-                Haziran - Eylül arası en ideal dönemdir. Karın erimesi ve hava koşulları bu dönemde trekking için en uygun şartları sunar.
+                April to November is ideal for hiking. Spring offers wildflowers and green landscapes, while autumn provides comfortable temperatures and harvest season in villages.
               </p>
             </div>
           </motion.div>
@@ -80,18 +93,18 @@ export default function TrailSection() {
                 <div className="grid grid-cols-3 gap-4">
                   <div className="text-center">
                     <Map className="w-8 h-8 mx-auto mb-2" />
-                    <div className="text-2xl font-bold">192 km</div>
-                    <div className="text-sm opacity-90">Toplam Mesafe</div>
+                    <div className="text-2xl font-bold">506 km</div>
+                    <div className="text-sm opacity-90">Total Distance</div>
                   </div>
                   <div className="text-center">
                     <Mountain className="w-8 h-8 mx-auto mb-2" />
-                    <div className="text-2xl font-bold">2300 m</div>
-                    <div className="text-sm opacity-90">Maksimum Yükseklik</div>
+                    <div className="text-2xl font-bold">1500 m</div>
+                    <div className="text-sm opacity-90">Max Altitude</div>
                   </div>
                   <div className="text-center">
                     <Calendar className="w-8 h-8 mx-auto mb-2" />
-                    <div className="text-2xl font-bold">10-13</div>
-                    <div className="text-sm opacity-90">Gün</div>
+                    <div className="text-2xl font-bold">20-30</div>
+                    <div className="text-sm opacity-90">Days</div>
                   </div>
                 </div>
               </div>
@@ -106,8 +119,8 @@ export default function TrailSection() {
             >
               <div className="text-center">
                 <Compass className="w-8 h-8 mx-auto mb-1" />
-                <div className="text-xs font-medium">GPS İşaretli</div>
-                <div className="text-xs">Güvenli Rota</div>
+                <div className="text-xs font-medium">GPS Marked</div>
+                <div className="text-xs">Safe Route</div>
               </div>
             </motion.div>
           </motion.div>

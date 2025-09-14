@@ -1,0 +1,27 @@
+{
+  "name": "Peaks of the Balkans - Balkanların Zirveleri",
+  "short_name": "Balkan Peaks",
+  "description": "Discover the legendary 192km mountain trail spanning Albania, Montenegro and Kosovo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a0a0a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "nature", "sports"],
+  "lang": "tr",
+  "dir": "ltr"
+}

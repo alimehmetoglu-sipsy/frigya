@@ -75,10 +75,10 @@ export default function GallerySection({ data }: GallerySectionProps) {
           className="text-center max-w-3xl mx-auto mb-12"
         >
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-            Fotoğraf Galerisi
+            Photo Gallery
           </h2>
           <p className="text-lg text-gray-600">
-            Balkanların Zirveleri rotasından unutulmaz anlar
+            Unforgettable moments from the Phrygian Way trail
           </p>
         </motion.div>
 

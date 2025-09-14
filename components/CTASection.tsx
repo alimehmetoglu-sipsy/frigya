@@ -29,27 +29,27 @@ export default function CTASection() {
           className="text-center text-white max-w-3xl mx-auto"
         >
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
-            Maceranıza Başlamaya Hazır mısınız?
+            Ready to Start Your Adventure?
           </h2>
           <p className="text-xl mb-10 text-gray-100">
-            Balkanların en güzel rotasında unutulmaz bir deneyim için bizimle iletişime geçin.
+            Join us on Turkey's most spectacular ancient trail and create unforgettable memories.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/basvuru"
+              href="/en/register"
               className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center space-x-2 group"
             >
-              <span>Hemen Başvur</span>
+              <span>Register Now</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             
             <Link
-              href="/iletisim"
+              href="/en/contact"
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-all inline-flex items-center justify-center space-x-2"
             >
               <Phone className="w-5 h-5" />
-              <span>İletişim</span>
+              <span>Contact Us</span>
             </Link>
           </div>
         </motion.div>

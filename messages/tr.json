@@ -1,0 +1,261 @@
+{
+  "meta": {
+    "title": "Frigya Yolu - Anadolu'nun Antik Patikaları",
+    "description": "Antik Frigya'dan geçen 500km'lik tarihi patikayı keşfedin. Gordion'dan Laodikeia'ya, 3000 yıllık tarih, kültür ve doğal güzellikleri keşfedin."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "routes": "Rotalar",
+    "register": "Kayıt",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "3000 Yıllık Tarihte Yürüyüş",
+    "subtitle": "Antik Frigya Yolu'nu Keşfedin",
+    "description": "Nefes kesici manzaralar eşliğinde antik şehirleri birbirine bağlayan 500 km'lik tarihi patika",
+    "cta": {
+      "primary": "Yolculuğa Başla",
+      "secondary": "Rotaları Keşfet"
+    }
+  },
+  "features": {
+    "title": "Yolculuğu Deneyimleyin",
+    "items": {
+      "culture": {
+        "title": "Kültürel Miras",
+        "description": "UNESCO Dünya Mirası alanlarını ve antik Frig anıtlarını keşfedin"
+      },
+      "nature": {
+        "title": "Doğal Güzellik",
+        "description": "Dağlardan vadilere çeşitli manzaralar arasında yürüyün"
+      },
+      "villages": {
+        "title": "Otantik Köyler",
+        "description": "Tarihi köylerde geleneksel Türk misafirperverliğini deneyimleyin"
+      },
+      "history": {
+        "title": "Yaşayan Tarih",
+        "description": "Antik medeniyetlerin ve ticaret yollarının izinde yürüyün"
+      }
+    }
+  },
+  "routes": {
+    "title": "Rotanızı Seçin",
+    "subtitle": "Antik Frigya'dan geçen üç ana rota",
+    "viewDetails": "Detayları Görüntüle",
+    "distance": "Mesafe",
+    "difficulty": "Zorluk",
+    "duration": "Süre",
+    "days": "gün",
+    "gordion": {
+      "name": "Gordion Rotası - Doğu",
+      "description": "Antik başkentten tarihi yerleşimlere 219km'lik yolculuk",
+      "highlights": {
+        "unesco": "UNESCO Dünya Mirası Alanı",
+        "midas": "Kral Midas Tümülüsü",
+        "wooden": "En eski ahşap yapı (MÖ 740)"
+      }
+    },
+    "yazilikaya": {
+      "name": "Yazılıkaya Rotası - Merkez",
+      "description": "Frig uygarlığının kalbinden geçen 238km'lik yürüyüş",
+      "highlights": {
+        "cybele": "Kibele Açık Hava Tapınağı",
+        "rock": "Etkileyici kaya oluşumları",
+        "inscriptions": "Antik Frig yazıtları"
+      }
+    },
+    "afyon": {
+      "name": "Afyon Rotası - Batı",
+      "description": "Termal kaynaklara ve antik şehirlere giden 165km'lik patika",
+      "highlights": {
+        "thermal": "Ünlü termal kaynaklar",
+        "roman": "Roma ve Bizans kalıntıları",
+        "castle": "Ortaçağ Afyon Kalesi"
+      }
+    }
+  },
+  "map": {
+    "title": "İnteraktif Patika Haritası",
+    "subtitle": "Frigya Yolu ağının tamamını keşfedin",
+    "loading": "Harita yükleniyor...",
+    "viewFullscreen": "Tam Ekran Görüntüle"
+  },
+  "statistics": {
+    "distance": {
+      "value": "500+",
+      "unit": "km",
+      "label": "Toplam Patika Mesafesi"
+    },
+    "sites": {
+      "value": "30+",
+      "label": "Tarihi Alan"
+    },
+    "villages": {
+      "value": "50+",
+      "label": "Bağlanan Köy"
+    },
+    "elevation": {
+      "value": "2000",
+      "unit": "m",
+      "label": "Maksimum Yükseklik"
+    }
+  },
+  "gallery": {
+    "title": "Patika Öne Çıkanlar",
+    "subtitle": "Frigya Yolu'nun güzelliğini keşfedin"
+  },
+  "cta": {
+    "title": "Maceranıza Başlamaya Hazır mısınız?",
+    "description": "Türkiye'nin antik mirasını keşfeden binlerce yürüyüşçüye katılın",
+    "button": "Yürüyüşünüzü Planlayın"
+  },
+  "footer": {
+    "description": "Sürdürülebilir turizm yoluyla Frigya'nın antik mirasını korumak ve paylaşmak",
+    "quickLinks": {
+      "title": "Hızlı Linkler",
+      "about": "Hakkında",
+      "routes": "Rotalar",
+      "planning": "Seyahat Planlama",
+      "safety": "Güvenlik"
+    },
+    "routes": {
+      "title": "Rotalar",
+      "gordion": "Gordion Rotası",
+      "yazilikaya": "Yazılıkaya Rotası",
+      "afyon": "Afyon Rotası",
+      "stages": "Tüm Etaplar"
+    },
+    "contact": {
+      "title": "İletişim",
+      "email": "E-posta",
+      "phone": "Telefon"
+    },
+    "social": {
+      "title": "Bizi Takip Edin"
+    },
+    "copyright": "© 2024 Frigya Yolu. Tüm hakları saklıdır."
+  },
+  "registration": {
+    "title": "Frigya Yolu Kayıt Formu",
+    "subtitle": "Tarihi Frigya Yolu yürüyüş deneyimine katılmak için kayıt olun",
+    "errors": {
+      "routeRequired": "Rota seçimi gerekli",
+      "timeframeRequired": "Zaman seçimi gerekli",
+      "groupTypeRequired": "Grup tipi seçimi gerekli",
+      "firstNameMin": "Ad en az 2 karakter olmalı",
+      "lastNameMin": "Soyad en az 2 karakter olmalı",
+      "emailInvalid": "Geçerli bir e-posta adresi gerekli",
+      "phoneInvalid": "Geçerli bir telefon numarası gerekli",
+      "ageRange": "Yaş 18-75 arasında olmalı",
+      "fitnessRequired": "Kondisyon seviyesi seçimi gerekli",
+      "experienceRequired": "Deneyim seviyesi seçimi gerekli",
+      "motivationMin": "Motivasyon minimum {min} kelime olmalı (şu an {current} kelime)",
+      "goalsRequired": "En az bir hedef seçmelisiniz",
+      "fieldRequired": "Bu alan gerekli",
+      "termsRequired": "Kullanım koşullarını kabul etmelisiniz",
+      "dataProcessingRequired": "Veri işleme onayı gerekli",
+      "general": "Bir hata oluştu",
+      "connection": "Bağlantı hatası. Lütfen tekrar deneyiniz."
+    },
+    "success": {
+      "message": "🎉 Kaydınız başarıyla alındı! Teşekkürler.",
+      "redirecting": "Yönlendiriliyorsunuz..."
+    },
+    "social": {
+      "currentUsers": "kişi şu anda bu formu dolduruyor"
+    },
+    "form": {
+      "personalInfo": "Kişisel Bilgiler",
+      "name": "Ad Soyad",
+      "namePlaceholder": "Adınızı ve soyadınızı girin",
+      "email": "E-posta Adresi",
+      "emailPlaceholder": "ornek@email.com",
+      "phone": "Telefon Numarası",
+      "phonePlaceholder": "+90 555 555 5555",
+      "country": "Ülke",
+      "countryPlaceholder": "Ülkenizi seçin",
+      "emergencyContact": "Acil Durum İletişimi",
+      "emergencyName": "İletişim Adı",
+      "emergencyNamePlaceholder": "Acil durum kişisi adı",
+      "emergencyPhone": "İletişim Telefonu",
+      "emergencyPhonePlaceholder": "Acil durum telefonu",
+      "trailDetails": "Patika Detayları",
+      "route": "Seçilen Rota",
+      "routePlaceholder": "Rotanızı seçin",
+      "startDate": "Başlangıç Tarihi",
+      "endDate": "Bitiş Tarihi",
+      "groupSize": "Grup Büyüklüğü",
+      "experience": "Yürüyüş Deneyimi",
+      "experiencePlaceholder": "Deneyim seviyenizi seçin",
+      "experienceLevels": {
+        "beginner": "Başlangıç",
+        "intermediate": "Orta",
+        "experienced": "Deneyimli",
+        "expert": "Uzman"
+      },
+      "additionalInfo": "Ek Bilgiler",
+      "accommodation": "Konaklama Tercihi",
+      "accommodationPlaceholder": "Konaklama tipini seçin",
+      "accommodationTypes": {
+        "camping": "Kamp",
+        "guesthouse": "Pansiyon",
+        "hotel": "Otel",
+        "mixed": "Karışık"
+      },
+      "specialRequirements": "Özel Gereksinimler veya Sağlık Durumları",
+      "specialRequirementsPlaceholder": "Özel gereksinimleriniz varsa lütfen belirtin...",
+      "terms": "Şartlar ve Koşullar",
+      "agreeTerms": "Şartları ve koşulları kabul ediyorum",
+      "agreeNewsletter": "Frigya Yolu güncellemelerini almak istiyorum",
+      "submit": "Kaydı Tamamla",
+      "submitting": "Kaydediliyor..."
+    },
+    "success": {
+      "title": "Kayıt Başarılı!",
+      "message": "Frigya Yolu'na kaydınız için teşekkür ederiz. Patika detaylarınızı içeren bir onay e-postası gönderdik.",
+      "registrationNumber": "Kayıt numaranız:",
+      "whatNext": "Sonraki Adımlar?",
+      "steps": {
+        "1": "Detaylı patika bilgileri için e-postanızı kontrol edin",
+        "2": "Patika haritalarımızı ve GPS izlerini indirin",
+        "3": "Anlık güncellemeler için WhatsApp grubumuza katılın",
+        "4": "Maceranız için hazırlanın!"
+      },
+      "backHome": "Ana Sayfaya Dön"
+    },
+    "error": {
+      "title": "Kayıt Başarısız",
+      "message": "Kaydınız işlenirken bir hata oluştu. Lütfen tekrar deneyin.",
+      "tryAgain": "Tekrar Dene"
+    }
+  },
+  "award": {
+    "badge": "Avrupa Mükemmellik Ödülü",
+    "title": "Avrupa Mükemmellik Ödülü Sahibi 2018",
+    "description": "Frigya Yolu, üstün patika geliştirme, kültürel miras koruma ve sürdürülebilir turizm alanlarındaki başarıları ile prestijli Avrupa Mükemmellik Ödülü'ne layık görülerek Avrupa'nın önde gelen kültürel ve yürüyüş rotalarından biri olarak tanındı.",
+    "certificates": {
+      "excellence": {
+        "title": "Avrupa Mükemmellik Ödülü",
+        "subtitle": "Üstün tarihi koruma ile olağanüstü kültürel patika"
+      },
+      "heritage": {
+        "title": "UNESCO Dünya Mirası",
+        "subtitle": "Gordion arkeolojik alanı resmi olarak tanındı"
+      },
+      "sustainable": {
+        "title": "Sürdürülebilir Turizm Ödülü",
+        "subtitle": "Toplum temelli turizm geliştirme modeli"
+      }
+    },
+    "comparison": {
+      "title": "Avrupa'nın En Büyük Patikalarından"
+    },
+    "details": [
+      "Kültürel miras koruma alanında Avrupa Mükemmellik tanıması alan tek Türk patikası",
+      "Camino de Santiago ve Via Francigena ile birlikte Avrupa'nın en önemli kültürel rotaları arasında gösterildi",
+      "Üstün toplum katılımı ve sürdürülebilir turizm geliştirme için tanındı",
+      "GPS koordinatları ve kapsamlı yön işaret sistemi ile uluslararası patika işaretleme standartları"
+    ]
+  }
+}

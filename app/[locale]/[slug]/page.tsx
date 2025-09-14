@@ -4,6 +4,8 @@ import path from 'path';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import DynamicPageContent from '@/components/DynamicPageContent';
+import { generateSEOMetadata, generateStructuredData } from '@/lib/metadata';
+import Script from 'next/script';
 
 interface Page {
   slug: string;
@@ -45,39 +47,60 @@ export async function generateStaticParams() {
   }
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
+export async function generateMetadata({ params }: { params: Promise<{ slug: string; locale: string }> }) {
+  const { slug, locale } = await params;
   const page = await getPageData(slug);
-  
+
   if (!page) {
     return {
       title: 'Sayfa Bulunamadı',
     };
   }
 
-  return {
+  return generateSEOMetadata({
+    locale: locale as 'tr' | 'en' | 'sq',
     title: page.seo?.title || page.title,
     description: page.seo?.description || '',
-    keywords: page.seo?.keywords || '',
-  };
+    path: `/${slug}`,
+    type: 'article'
+  });
 }
 
-export default async function DynamicPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  
+export default async function DynamicPage({ params }: { params: Promise<{ slug: string; locale: string }> }) {
+  const { slug, locale } = await params;
+
   // Admin sayfalarını kontrol et (bunlar için 404 döndür)
   if (slug === 'admin') {
     notFound();
   }
-  
+
   const page = await getPageData(slug);
-  
+
   if (!page) {
     notFound();
   }
 
+  const articleData = generateStructuredData({
+    type: 'Article',
+    locale: locale as 'tr' | 'en' | 'sq',
+    data: {
+      title: page.seo?.title || page.title,
+      description: page.seo?.description || '',
+      path: `/${slug}`,
+      datePublished: new Date().toISOString(),
+      dateModified: new Date().toISOString()
+    }
+  });
+
   return (
     <>
+      <Script
+        id="structured-data-article"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleData)
+        }}
+      />
       <Navigation />
       <DynamicPageContent page={page} />
       <Footer />

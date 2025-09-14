@@ -1,19 +1,40 @@
 import { Inter, Montserrat } from 'next/font/google';
+import { Metadata, Viewport } from 'next';
 import './globals.css';
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 });
 
-const montserrat = Montserrat({ 
+const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
 });
 
-export const metadata = {
-  title: 'Balkanların Zirveleri - Arnavutluk, Kosova ve Karadağ\'da Unutulmaz Trekking Deneyimi',
-  description: '192 kilometrelik eşsiz patika rotasıyla Balkanların Zirveleri, Arnavutluk, Kosova ve Karadağ\'ın el değmemiş dağlarında unutulmaz bir macera sunuyor.',
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#0a0a0a' }
+  ],
+};
+
+export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://balkanlarinzirveleri.com'),
+  manifest: '/manifest.json',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' }
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png' }
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -21,11 +42,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="tr" className={`${inter.variable} ${montserrat.variable}`}>
-      <body className="font-sans">
-        {children}
-      </body>
-    </html>
-  );
+  return children;
 }

@@ -1,241 +1,295 @@
 {
   "hero": {
-    "title": "BALKANLARIN ZİRVELERİ",
-    "subtitle": "Arnavutluk, Kosova ve Karadağ'da Sınırlar Ötesi Trekking Deneyimi",
-    "description": "Dünyanın sayılı sınır ötesi yürüyüş rotalarından biri olan 192 kilometrelik Balkanların Zirveleri, Batı Balkanların uzak ve el değmemiş dağlık bölgelerinden geçerek benzersiz bir macera sunuyor.",
-    "ctaText": "Rotayı Keşfet",
-    "ctaLink": "/rota-aciklamasi"
+    "title": "PHRYGIAN WAY",
+    "subtitle": "Walk Through 3000 Years of History",
+    "description": "Discover the Ancient Phrygian Way - Turkey's Most Spectacular 506km Trail. Embark on an extraordinary journey through the heart of ancient Anatolia, where mysterious rock-carved monuments and timeless villages bring history alive with every step.",
+    "ctaText": "Start Your Journey",
+    "ctaLink": "/routes"
   },
   "introduction": {
-    "title": "Balkanların Kalbinde Gizli Bir Hazine",
+    "title": "The Phrygian Legacy",
     "paragraphs": [
-      "Yerel halkın ekonomisine katkı sağlamak, Kosova, Karadağ ve Arnavutluk'un dağlık bölgelerindeki göçü durdurmak ve bölgenin bu kısımlarını birbirine yakınlaştırmak amacıyla, ulusal ve yerel turizm örgütleri ile dağcılık kulüpleri, Alman Kalkınma İşbirliği ile güçlerini birleştirerek \"Balkanların Zirveleri\" bölgesini dağ turizmi için tek bir destinasyon olarak geliştirdi.",
-      "Sınır ötesi \"Balkanların Zirveleri\", Batı Balkanların uzak ve vahşi dağlık bölgelerinden birinden geçer. Çoban patikaları ve yaya yollarını kullanarak, rota deniz seviyesinin 2300 metre üzerine kadar çıkan yüksek alpin dağlardan geçer ve yeşil vadilerden kristal berraklığında dağ göllerine, şelalelerden nehirlere ve zamanın durmuş göründüğü uzak, pitoresk dağ köylerine kadar çeşitli nefes kesici manzaralarla dolu dağ manzaralarından geçer.",
-      "Yirmi yıl öncesine kadar bölge ziyaretçiler için neredeyse erişilemezdi, bu da Arnavutluk, Kosova ve Karadağ'ın üç dağından geçerek yürüyüş yapmayı otantik bir kültürel deneyim ve macera haline getiriyor."
+      "The Phrygian Way (Frig Yolu) is one of Turkey's longest and most culturally rich hiking trails, stretching 506 kilometers through the ancient lands of Phrygia. Established in 2013 by a dedicated team of volunteers led by Hüseyin Sarı, this remarkable trail connects the modern provinces of Ankara, Afyonkarahisar, Eskişehir, and Kütahya.",
+      "Journey through a landscape that has witnessed over 3,000 years of human civilization, from the mighty Phrygian Kingdom of King Midas to the Byzantine Empire and beyond. The trail passes through 44 traditional villages and 5 towns, offering an authentic glimpse into rural Turkish life unchanged for centuries.",
+      "In 2018, the Phrygian Way was recognized as one of Europe's finest cultural routes, receiving acclaim for its outstanding historical preservation, sustainable tourism development, community engagement, and international trail standards. This recognition places the Phrygian Way alongside Europe's most prestigious hiking trails, including the Camino de Santiago and the Via Francigena."
     ]
   },
-  "route": {
-    "subtitle": "192 km'lik efsanevi yürüyüş rotası",
-    "description": "Oldukça iddialı \"Balkanların Zirveleri\" rotası 192 km'lik bir mesafeyi kapsar ve üç ülkeyi geçerek bir döngü tamamlar.",
-    "stats": {
-      "distance": "200 km",
-      "duration": "10-13 gün",
-      "countries": "3 ülke",
-      "maxAltitude": "2,300 m"
+  "provinces": [
+    {
+      "icon": "Building",
+      "name": "Ankara Province",
+      "title": "Starting Point: Gordion (Yassıhöyük)",
+      "highlights": [
+        "UNESCO World Heritage Site (2023)",
+        "Ancient capital of Phrygia",
+        "Home to King Midas's father's tomb",
+        "World's oldest standing wooden building (740 BCE)",
+        "Museum with exceptional Phrygian artifacts",
+        "Starting point for the 219km eastern route"
+      ]
     },
+    {
+      "icon": "Mountain",
+      "name": "Eskişehir Province",
+      "title": "Central Hub: Yazılıkaya (Midas City)",
+      "highlights": [
+        "Religious center of ancient Phrygia",
+        "Spectacular 17-meter tall Midas Monument",
+        "Rock-cut temples and tombs",
+        "Byzantine settlements",
+        "Convergence point of all three routes",
+        "Stunning plateau setting at 1,300m elevation"
+      ]
+    },
+    {
+      "icon": "Droplets",
+      "name": "Afyonkarahisar Province",
+      "title": "Starting Point: Seydiler",
+      "highlights": [
+        "Turkey's thermal spa capital",
+        "Dramatic fairy chimneys",
+        "Byzantine rock churches in Ayazini",
+        "140km southern route",
+        "Rich culinary traditions",
+        "Natural hot springs used since Phrygian times"
+      ]
+    },
+    {
+      "icon": "TreePine",
+      "name": "Kütahya Province",
+      "title": "Starting Point: Yenice Farm",
+      "highlights": [
+        "147km western route",
+        "Ancient Phrygian roads",
+        "Spectacular Zahran Valley",
+        "Traditional ceramic arts",
+        "Mountain landscapes",
+        "Historic Ottoman architecture"
+      ]
+    }
+  ],
+  "route": {
+    "subtitle": "506 km historic trail through ancient Anatolia",
+    "description": "The Phrygian Way consists of three main routes that converge at the sacred site of Yazılıkaya. The trail is marked according to international standards with red and white blazes, featuring 109 directional poles and 217 signs.",
+    "stats": {
+      "distance": "506 km",
+      "duration": "20-30 days",
+      "villages": "44 villages",
+      "maxAltitude": "1,500 m"
+    },
+    "mainRoutes": [
+      {
+        "name": "Eastern Route (Gordion)",
+        "distance": "219 km",
+        "duration": "8-10 days",
+        "difficulty": "Moderate to Challenging",
+        "description": "The longest and most historically rich path, starting from the ancient capital.",
+        "color": "red"
+      },
+      {
+        "name": "Southern Route (Seydiler)",
+        "distance": "140 km",
+        "duration": "6-7 days",
+        "difficulty": "Moderate",
+        "description": "Perfect for beginners, featuring fairy chimneys and thermal springs.",
+        "color": "blue"
+      },
+      {
+        "name": "Western Route (Yenice)",
+        "distance": "147 km",
+        "duration": "6-7 days",
+        "difficulty": "Moderate",
+        "description": "The most scenic route through valleys and ancient roads.",
+        "color": "green"
+      }
+    ],
     "stages": [
-      "Theth, Arnavutluk",
-      "Valbonë, Arnavutluk",
-      "Çerem, Arnavutluk",
-      "Dobërdol, Arnavutluk",
-      "Milishevc, Kosova",
-      "Reka e Allagës, Kosova",
-      "Liqinat i Kuçishtës, Kosova",
-      "Babino Polje, Karadağ",
-      "Plav, Karadağ",
-      "Vusanje, Karadağ",
-      "Shkodra, Arnavutluk"
+      "Stage 1: Gordion → Beylikköprü (18 km)",
+      "Stage 2: Beylikköprü → Mülk (34 km)",
+      "Stage 3: Mülk → Sivrihisar (26 km)",
+      "Stage 4: Sivrihisar → Ballıhisar/Pessinus (32 km)",
+      "Stage 5: Ballıhisar → Yazılıkaya (35 km)",
+      "Stage 6: Yazılıkaya → Döğer (35 km)",
+      "Stage 7: Döğer → Ayazini (30 km)",
+      "Stage 8: Ayazini → Seydiler (35 km)"
     ],
     "technicalDetails": {
-      "minAltitude": "670 metre",
-      "maxAltitude": "2,290 metre",
-      "totalAscent": "9,800 metre",
-      "totalDescent": "9,900 metre"
+      "minAltitude": "800 m",
+      "maxAltitude": "1,500 m",
+      "totalAscent": "8,500 m",
+      "totalDescent": "8,300 m",
+      "difficultyBreakdown": {
+        "easy": "25%",
+        "moderate": "60%",
+        "challenging": "15%"
+      }
     }
   },
-  "onTrail": {
-    "services": [
-      {
-        "icon": "Home",
-        "title": "Konaklama ve Misafirperverlik",
-        "description": "Bölge, sakinlerinin misafirperverliği ile tanınır. Ziyaretçiler, her üç ülkede de rota boyunca bulunan geleneksel evlerde konaklayabilirler."
-      },
-      {
-        "icon": "Utensils",
-        "title": "Yiyecek ve İçecek",
-        "description": "Rota kısmen ıssız dağlık bölgelerden geçtiği için yanınızda her zaman yeterli miktarda su ve yiyecek bulundurmanız tavsiye edilir."
-      },
-      {
-        "icon": "Map",
-        "title": "İşaretleme ve Yönlendirme",
-        "description": "Balkanların Zirveleri rotasının tamamı, rota boyunca özel işaretleme sistemleri ile işaretlenmiştir."
-      }
-    ],
-    "markings": [
-      {
-        "country": "Arnavutluk",
-        "colors": "Beyaz/Kırmızı/Beyaz"
-      },
-      {
-        "country": "Kosova",
-        "colors": "Kırmızı/Beyaz/Kırmızı"
-      },
-      {
-        "country": "Karadağ",
-        "colors": "Kırmızı daire/Beyaz dolgu"
-      }
-    ],
-    "warnings": [
-      "Mümkün olduğunda, kalacak yer garantilemek için önceden rezervasyon yapmanız önemle tavsiye edilir.",
-      "Rotanın tamamı işaretlenmiş olsa da, kısmen ıssız dağ bölgelerinden geçer.",
-      "Rota boyunca çok az çöp toplama tesisi bulunduğunu unutmayın.",
-      "Acil durumlarda yerel kurtarma ekiplerinin numaralarını kaydedin."
-    ]
-  },
-  "travelAdvice": {
+  "services": [
+    {
+      "icon": "Home",
+      "title": "Accommodation",
+      "description": "Village guesthouses offer basic rooms with breakfast. Wild camping is permitted in designated areas. Hotels available in major towns like Sivrihisar and Afyon."
+    },
+    {
+      "icon": "Utensils",
+      "title": "Food & Water",
+      "description": "Villages have basic shops with bread, cheese, and local products. Springs marked on trail. Carry 3-4 liters capacity in summer. Local specialties include Afyon kaymak and sucuk."
+    },
+    {
+      "icon": "Map",
+      "title": "Trail Marking",
+      "description": "Complete trail marking with red & white stripes (main trail), yellow arrows (alternatives), blue markers (water sources), and green signs (points of interest)."
+    },
+    {
+      "icon": "Navigation",
+      "title": "GPS Navigation",
+      "description": "GPX files available for download. Offline maps compatible with Maps.me and OsmAnd. Coordinates for all major waypoints and emergency contact points marked."
+    }
+  ],
+  "seasons": [
+    {
+      "name": "Spring (March-May)",
+      "temperature": "10-20°C",
+      "conditions": "Variable, possible rain",
+      "pros": "Wildflowers, green landscapes",
+      "cons": "Muddy trails, unpredictable weather"
+    },
+    {
+      "name": "Summer (June-August)",
+      "temperature": "25-40°C",
+      "conditions": "Hot and dry",
+      "pros": "Long days, stable weather",
+      "cons": "Very hot midday, water scarcity"
+    },
+    {
+      "name": "Autumn (September-November)",
+      "temperature": "15-25°C",
+      "conditions": "Ideal hiking weather",
+      "pros": "Comfortable temperatures, harvest season",
+      "cons": "Shorter days"
+    },
+    {
+      "name": "Winter (December-February)",
+      "temperature": "Below 0°C",
+      "conditions": "Not recommended",
+      "pros": "-",
+      "cons": "Snow possible above 1,000m, many facilities closed"
+    }
+  ],
+  "equipment": {
     "categories": [
       {
-        "icon": "Cloud",
-        "title": "Hava Koşulları ve Gün Işığı",
-        "content": "Yürüyüş gezinizi ne zaman gerçekleştirirseniz gerçekleştirin, her gün beklenen hava koşullarının farkında olmak çok önemlidir.",
-        "tips": [
-          "Günlük yürüyüş rotanızı yeterli gün ışığı ile planlayın",
-          "Hava durumunu düzenli olarak kontrol edin",
-          "Kış aylarında ekstra dikkatli olun"
+        "title": "Clothing",
+        "items": [
+          "Moisture-wicking shirts (2-3)",
+          "Quick-dry hiking pants (2)",
+          "Fleece jacket or puffy jacket",
+          "Waterproof jacket and rain pants",
+          "Sun hat and warm beanie",
+          "Hiking socks (5-6 pairs)"
         ]
       },
       {
-        "icon": "Shirt",
-        "title": "Giyim ve Ekipman",
-        "content": "Sıcak ve kuru bir yürüyüşçü mutlu bir yürüyüşçüdür! Bu nedenle rahat yürüyüş botları ve çoraplar şart.",
-        "tips": [
-          "Katmanlı giyinin",
-          "Su geçirmez ekipman şart",
-          "Yedek çorap ve eldiven bulundurun",
-          "GPS, pusula, ilk yardım kiti taşıyın"
+        "title": "Footwear",
+        "items": [
+          "Broken-in hiking boots (waterproof recommended)",
+          "Camp shoes or sandals",
+          "Gaiters (optional for dusty sections)"
         ]
       },
       {
-        "icon": "Plane",
-        "title": "Ulaşım",
-        "content": "Her üç ülkeye de uçakla kolayca ulaşılabilir.",
-        "tips": [
-          "Havaalanından transferi önceden ayarlayın",
-          "Minibüs ve otobüs seçeneklerini araştırın",
-          "Yerel turizm ofislerinden bilgi alın"
-        ]
-      }
-    ],
-    "essentialItems": [
-      "Yürüyüş botları ve yedek çoraplar",
-      "Su geçirmez ceket ve pantolon",
-      "Polar veya yün kazak",
-      "Şapka, eldiven ve güneş gözlüğü",
-      "GPS cihazı veya akıllı telefon",
-      "İlk yardım kiti",
-      "Kafa lambası veya el feneri",
-      "Yeterli su ve atıştırmalık",
-      "Güneş kremi ve dudak koruyucu",
-      "Harita ve pusula"
-    ]
-  },
-  "resources": {
-    "downloads": [
-      {
-        "title": "Balkanların Zirveleri Resmi Rehberi",
-        "description": "Rotanın tüm etaplarını içeren detaylı PDF rehber",
-        "type": "PDF",
-        "size": "15 MB",
-        "url": "#"
-      },
-      {
-        "title": "GPS Rota Dosyaları",
-        "description": "GPX formatında tüm rota verileri",
-        "type": "GPX",
-        "size": "2 MB",
-        "url": "#"
-      },
-      {
-        "title": "Konaklama Rehberi",
-        "description": "Tüm konaklama noktalarının detaylı listesi",
-        "type": "PDF",
-        "size": "5 MB",
-        "url": "#"
-      }
-    ],
-    "contacts": [
-      {
-        "country": "Arnavutluk",
-        "organizations": [
-          {
-            "name": "Albanian Tourism Organization",
-            "phone": "+355 4 2234 567",
-            "email": "info@albania-tourism.al"
-          },
-          {
-            "name": "Theth National Park",
-            "phone": "+355 68 2234 567",
-            "email": "theth@parks.al"
-          }
+        "title": "Camping Gear",
+        "items": [
+          "3-season tent (or lighter for summer)",
+          "Sleeping bag (rated to 0°C)",
+          "Sleeping pad",
+          "Cooking stove & fuel",
+          "Lightweight cookset",
+          "Water filter or purification tablets"
         ]
       },
       {
-        "country": "Kosova",
-        "organizations": [
-          {
-            "name": "Kosovo Tourism Board",
-            "phone": "+383 38 200 200",
-            "email": "info@kosovotourism.xk"
-          },
-          {
-            "name": "Peja Tourist Information",
-            "phone": "+383 39 432 100",
-            "email": "visit@peja.xk"
-          }
-        ]
-      },
-      {
-        "country": "Karadağ",
-        "organizations": [
-          {
-            "name": "Montenegro Tourism Organization",
-            "phone": "+382 20 665 200",
-            "email": "info@montenegro.travel"
-          },
-          {
-            "name": "Plav Tourist Center",
-            "phone": "+382 51 251 100",
-            "email": "tourism@plav.me"
-          }
-        ]
-      }
-    ],
-    "links": [
-      {
-        "category": "Haritalar ve Navigasyon",
-        "links": [
-          {
-            "name": "OpenStreetMap - Balkanlar",
-            "url": "#"
-          },
-          {
-            "name": "Rota GPX İndirmeleri",
-            "url": "#"
-          },
-          {
-            "name": "Çevrimdışı Harita Uygulamaları",
-            "url": "#"
-          }
-        ]
-      },
-      {
-        "category": "Hava Durumu",
-        "links": [
-          {
-            "name": "Mountain Weather Balkans",
-            "url": "#"
-          },
-          {
-            "name": "7 Günlük Tahmin",
-            "url": "#"
-          },
-          {
-            "name": "Canlı Web Kameraları",
-            "url": "#"
-          }
+        "title": "Navigation & Safety",
+        "items": [
+          "Detailed trail map",
+          "GPS device or smartphone with offline maps",
+          "Compass and whistle",
+          "First aid kit",
+          "Emergency blanket",
+          "Headlamp + spare batteries",
+          "Power bank"
         ]
       }
     ]
   },
-  "gallery": []
+  "culturalTips": [
+    "Remove shoes when entering homes",
+    "Dress modestly in villages",
+    "Accept tea when offered (it's rude to refuse)",
+    "Ask permission before photographing people",
+    "Respect prayer times in religious areas",
+    "Learn basic Turkish phrases (Merhaba, Teşekkür ederim, Su, Yemek)"
+  ],
+  "emergencyContacts": {
+    "services": [
+      { "name": "Emergency Services", "number": "112" },
+      { "name": "Gendarmerie (Rural Police)", "number": "156" },
+      { "name": "Forest Fire", "number": "177" },
+      { "name": "Tourist Police", "number": "154" }
+    ],
+    "notes": [
+      "No vaccinations required",
+      "Tick precautions April-September",
+      "Sun protection essential",
+      "Basic Turkish helpful in villages",
+      "ATMs only in major towns"
+    ]
+  },
+  "keyCoordinates": {
+    "gordion": { "lat": 39.6505, "lng": 31.9931 },
+    "yazilikaya": { "lat": 39.0334, "lng": 30.5231 },
+    "seydiler": { "lat": 38.5765, "lng": 30.5459 },
+    "yenice": { "lat": 39.4417, "lng": 29.9751 }
+  },
+  "gallery": {
+    "categories": [
+      {
+        "title": "Ancient Monuments",
+        "images": [
+          "Midas Monument (17m tall rock facade)",
+          "Aslantaş & Yılantaş (Lion and Snake rocks)",
+          "Maltaş open-air temple",
+          "Rock-cut tombs and Byzantine churches"
+        ]
+      },
+      {
+        "title": "Natural Wonders",
+        "images": [
+          "Seydiler fairy chimneys",
+          "Göynüş Valley vistas",
+          "Emre Lake reflections",
+          "Mountain plateaus and volcanic formations"
+        ]
+      },
+      {
+        "title": "Village Life",
+        "images": [
+          "Traditional stone houses",
+          "Local shepherds and their flocks",
+          "Village tea houses",
+          "Market days and handicraft workshops"
+        ]
+      },
+      {
+        "title": "Trail Experiences",
+        "images": [
+          "Sunrise hiking",
+          "Camping spots",
+          "River crossings",
+          "Mountain passes and trail markers"
+        ]
+      }
+    ]
+  }
 }
