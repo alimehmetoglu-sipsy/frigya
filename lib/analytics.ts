@@ -11,7 +11,12 @@ declare global {
 }
 
 export type EventParameters = {
-  [key: string]: string | number | boolean | undefined;
+  [key: string]: string | number | boolean | undefined | Array<{
+    item_name: string;
+    item_category?: string;
+    quantity?: number;
+    price?: number;
+  }>;
 };
 
 export type ConversionEvent = {

@@ -11,6 +11,7 @@
     "db:test": "tsx lib/db/test-connection.ts"
   },
   "dependencies": {
+    "@google-analytics/data": "^5.2.0",
     "@radix-ui/react-navigation-menu": "^1.2.14",
     "@radix-ui/react-scroll-area": "^1.2.10",
     "@react-google-maps/api": "^2.20.7",
