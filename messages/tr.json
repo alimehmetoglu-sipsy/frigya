@@ -431,5 +431,29 @@
       "title": "Önemli Sorumluluk Reddi",
       "content": "Frigya Yolu'nda yürüyüş yapmak doğal riskler içerir. Katılımcılar patikayı kendi risklerinde üstlenirler. Hava koşulları, arazi zorluğu ve uzak konumlar uygun hazırlık ve deneyim gerektirir. Planlarınızı her zaman birine bildirin ve karmaşık bölümler için yerel rehberleri kiralayın."
     }
+  },
+  "cookieConsent": {
+    "title": "Gizliliğinizi Önemsiyoruz",
+    "description": "Deneyiminizi geliştirmek, site trafiğini analiz etmek ve içeriği kişiselleştirmek için çerezler kullanıyoruz. \"Hepsini Kabul Et\"'e tıklayarak çerezleri kullanmamıza izin vermiş olursunuz.",
+    "acceptAll": "Hepsini Kabul Et",
+    "acceptNecessary": "Gerekli Olanları Kabul Et",
+    "customize": "Özelleştir",
+    "close": "Kapat",
+    "detailsTitle": "Çerez Ayarları",
+    "saveSettings": "Ayarları Kaydet",
+    "moreInfo": "Çerezleri nasıl kullandığımız hakkında daha fazla bilgi için lütfen",
+    "privacyPolicy": "Gizlilik Politikamızı",
+    "functional": {
+      "title": "Gerekli Çerezler",
+      "description": "Bu çerezler web sitesinin çalışması için gereklidir ve devre dışı bırakılamaz."
+    },
+    "analytics": {
+      "title": "Analitik Çerezler",
+      "description": "Web sitemizi nasıl kullandığınızı anlamamıza ve deneyiminizi geliştirmemize yardımcı olur."
+    },
+    "marketing": {
+      "title": "Pazarlama Çerezleri",
+      "description": "Size ilgili içerik ve reklamlar göstermek için kullanılır."
+    }
   }
 }

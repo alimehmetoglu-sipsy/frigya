@@ -1,8 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Users, MapPin, Clock, Check, Star, ChevronRight } from 'lucide-react';
+import { userEvents, ecommerceEvents, debugAnalytics } from '@/lib/analytics';
 
 const tourPackages = [
   {
@@ -90,6 +91,40 @@ export default function BookingOptions() {
   const [showCalculator, setShowCalculator] = useState(false);
   const [groupSize, setGroupSize] = useState(1);
 
+  // Track calculator usage
+  useEffect(() => {
+    if (showCalculator) {
+      debugAnalytics.log('Group discount calculator opened');
+    }
+  }, [showCalculator]);
+
+  // Track group size changes for analytics
+  useEffect(() => {
+    if (showCalculator && groupSize > 1) {
+      debugAnalytics.log('Group calculator interaction', {
+        groupSize,
+        discount: calculateGroupDiscount(groupSize)
+      });
+    }
+  }, [groupSize, showCalculator]);
+
+  const handlePackageSelection = (packageId: string) => {
+    const pkg = tourPackages.find(p => p.id === packageId);
+    if (pkg) {
+      setSelectedPackage(packageId);
+
+      // Track package selection
+      ecommerceEvents.viewItem(pkg.name, 'tour_package', parseFloat(pkg.price.replace(/[€,]/g, '')));
+
+      debugAnalytics.log('Tour package selected', {
+        packageId,
+        packageName: pkg.name,
+        price: pkg.price,
+        duration: pkg.duration
+      });
+    }
+  };
+
   const calculateGroupDiscount = (size: number) => {
     if (size >= 10) return 0.15;
     if (size >= 6) return 0.10;
@@ -171,7 +206,7 @@ export default function BookingOptions() {
               </div>
 
               <button
-                onClick={() => setSelectedPackage(pkg.id)}
+                onClick={() => handlePackageSelection(pkg.id)}
                 className={`w-full py-2 px-4 rounded-lg font-semibold transition-colors ${
                   pkg.featured
                     ? 'bg-primary-600 text-white hover:bg-primary-700'

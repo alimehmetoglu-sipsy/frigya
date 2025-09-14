@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, FormEvent } from 'react';
+import { useState, FormEvent, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Paperclip, AlertCircle, CheckCircle, Loader2 } from 'lucide-react';
+import { formEvents, conversionEvents, debugAnalytics } from '@/lib/analytics';
 
 interface ContactFormData {
   name: string;
@@ -41,35 +42,70 @@ export default function ContactForm() {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [ticketNumber, setTicketNumber] = useState<string>('');
   const [attachedFiles, setAttachedFiles] = useState<File[]>([]);
+  const [formStarted, setFormStarted] = useState(false);
+
+  // Track form start when user first interacts
+  useEffect(() => {
+    if (!formStarted && (formData.name || formData.email || formData.message)) {
+      setFormStarted(true);
+      formEvents.start('contact-form', 'Contact Form');
+      debugAnalytics.log('Contact form started');
+    }
+  }, [formData, formStarted]);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    try {
+      // Simulate form submission
+      await new Promise(resolve => setTimeout(resolve, 2000));
 
-    // Generate ticket number
-    const ticket = `PHR-${Date.now().toString().slice(-6)}`;
-    setTicketNumber(ticket);
+      // Generate ticket number
+      const ticket = `PHR-${Date.now().toString().slice(-6)}`;
+      setTicketNumber(ticket);
 
-    setIsSubmitting(false);
-    setSubmitStatus('success');
+      // Track successful form completion
+      formEvents.complete('contact-form', 'Contact Form');
 
-    // Reset form after 5 seconds
-    setTimeout(() => {
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: 'general',
-        message: '',
-        preferredContact: 'email'
+      // Track conversion event based on subject
+      const contactType = formData.subject === 'booking' ? 'booking' :
+                         formData.subject === 'support' ? 'support' : 'inquiry';
+      const estimatedValue = formData.subject === 'booking' ? 2500 : undefined; // Estimated booking value
+      conversionEvents.contactSubmit(contactType, estimatedValue);
+
+      debugAnalytics.log('Contact form completed', {
+        subject: formData.subject,
+        ticketNumber: ticket,
+        hasAttachments: attachedFiles.length > 0
       });
-      setAttachedFiles([]);
-      setSubmitStatus('idle');
-    }, 5000);
+
+      setIsSubmitting(false);
+      setSubmitStatus('success');
+
+      // Reset form after 5 seconds
+      setTimeout(() => {
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: 'general',
+          message: '',
+          preferredContact: 'email'
+        });
+        setAttachedFiles([]);
+        setSubmitStatus('idle');
+        setFormStarted(false);
+      }, 5000);
+    } catch (error) {
+      // Track form error
+      formEvents.error('contact-form', 'Submission failed');
+      debugAnalytics.log('Contact form error', error);
+
+      setIsSubmitting(false);
+      setSubmitStatus('error');
+    }
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -78,7 +114,16 @@ export default function ContactForm() {
       const validFiles = files.filter(file => file.size <= 10 * 1024 * 1024); // 10MB limit
       setAttachedFiles(prev => [...prev, ...validFiles]);
 
+      // Track file attachment
+      if (validFiles.length > 0) {
+        debugAnalytics.log('Files attached to contact form', {
+          fileCount: validFiles.length,
+          totalSize: validFiles.reduce((sum, file) => sum + file.size, 0)
+        });
+      }
+
       if (files.length !== validFiles.length) {
+        formEvents.error('contact-form', 'File too large', 'file-upload');
         alert('Some files were too large (max 10MB per file)');
       }
     }

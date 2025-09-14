@@ -596,5 +596,29 @@
       "challenging": "Challenging",
       "expert": "Expert"
     }
+  },
+  "cookieConsent": {
+    "title": "We value your privacy",
+    "description": "We use cookies to enhance your experience, analyze site traffic, and personalize content. By clicking \"Accept All\", you consent to our use of cookies.",
+    "acceptAll": "Accept All",
+    "acceptNecessary": "Accept Necessary",
+    "customize": "Customize",
+    "close": "Close",
+    "detailsTitle": "Cookie Settings",
+    "saveSettings": "Save Settings",
+    "moreInfo": "For more information about how we use cookies, please see our",
+    "privacyPolicy": "Privacy Policy",
+    "functional": {
+      "title": "Necessary Cookies",
+      "description": "These cookies are essential for the website to function and cannot be disabled."
+    },
+    "analytics": {
+      "title": "Analytics Cookies",
+      "description": "Help us understand how you use our website to improve your experience."
+    },
+    "marketing": {
+      "title": "Marketing Cookies",
+      "description": "Used to show you relevant content and advertisements."
+    }
   }
 }
