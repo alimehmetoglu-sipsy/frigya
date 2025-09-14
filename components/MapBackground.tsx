@@ -158,25 +158,25 @@ export default function MapBackground({ className = '', interactive = false }: M
 
   return (
     <div className={`relative ${className}`}>
-      {/* Mapbox container */}
+      {/* Primary background image */}
       <div
-        ref={mapContainerRef}
-        className={`absolute inset-0 transition-opacity duration-1000 ${
-          mapLoaded ? 'opacity-100' : 'opacity-0'
-        }`}
-      />
-
-      {/* Fallback background image */}
-      <div
-        className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 ${
-          mapLoaded ? 'opacity-0' : 'opacity-100'
-        }`}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://artofwayfaring.com/app/uploads/2020/10/Eski%C5%9Fehir-Seyitgazi-Yaz%C4%B1l%C4%B1kaya-02648.jpg')`,
+          backgroundImage: `url('/images/yazlikaya-hero-background.jpg')`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
       </div>
+
+      {/* Mapbox container (optional overlay) - disabled for now */}
+      {false && (
+        <div
+          ref={mapContainerRef}
+          className={`absolute inset-0 transition-opacity duration-1000 ${
+            mapLoaded ? 'opacity-50' : 'opacity-0'
+          }`}
+        />
+      )}
 
       {/* Overlay for hero text readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/10 pointer-events-none" />
