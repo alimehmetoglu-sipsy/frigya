@@ -43,8 +43,13 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
+      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 bg-[url('https://artofwayfaring.com/app/uploads/2020/10/Phrygian-Valley-Way-09682.jpg')] bg-cover bg-center bg-no-repeat" />
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center text-white max-w-4xl mx-auto">
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300">
@@ -56,8 +61,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           </div>
         </div>
 
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
+        {/* Subtle Pattern Overlay */}
+        <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-[url('/images/ancient-pattern.svg')] bg-repeat bg-center bg-[length:400px_400px]" />
         </div>
       </section>
